@@ -27,7 +27,7 @@
                         <div class="back">
                             <h4 class="h2">Dynamics Linea</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, ipsa.
-                                <a href="#">Leer más</a>
+                                <a href="<?php the_field('url_biodynamicsmedical');?>">Leer más</a>
                             </p>
                         </div>
                     </div>
@@ -35,7 +35,7 @@
             </div>
         </div>
     </div>
-<?php echo hola ;?>
+
 
 
 <?php get_footer();?>
