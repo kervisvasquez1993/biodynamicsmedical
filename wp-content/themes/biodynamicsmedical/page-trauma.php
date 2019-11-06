@@ -5,20 +5,24 @@
 */
 get_header();?>
 
+
 <?php $arg= array(
     'post_type' => 'trauma',
     'posts_per_page' => -1,
     'orderby' => 'title',
     'order'=> 'ASC',
-    'category_name' => 'trauma');
 
-    $cobertura = new WP_Query($arg);
-    while($cobertura->have_posts()): $cobertura->the_post();?>
+    );
 
-        <h1><?php the_title(); ?></h1>
+    $trauma= new WP_Query($arg);
+    while($trauma->have_posts()): $trauma->the_post();?>
+
+
 
 
 
     <?php endwhile; wp_resert_postdata();?>
+
+<h1>hola</h1>
 
 <?php get_footer();?>

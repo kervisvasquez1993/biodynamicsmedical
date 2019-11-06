@@ -20,6 +20,9 @@
                 <div class="col-centered">
                     <a href="<?php the_field('enlaces_division')?>">
                         <img src="<?php the_post_thumbnail_url();?>" alt="imagen destacada">
+                        <div>
+                            <h2><?php the_title();?></h2>
+                        </div>
                     </a>
                 </div>
 
