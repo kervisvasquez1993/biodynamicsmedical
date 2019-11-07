@@ -4,9 +4,9 @@
  */
 get_header();?>
 <div class="item active responsive">
-    <?php while(have_posts()): the_post(); ?>
+
         <img src="<?php echo get_the_post_thumbnail_url();?>" class="img-fluid" alt="Responsive image">
-    <?php endwhile;?>
+
 </div>
 <div class="container">
     <div class="row">
@@ -24,7 +24,7 @@ get_header();?>
                     <a href="<?php the_permalink(); ?>" class="btn btn-primary">Go somewhere</a>
                 </div>
             </div>
-        <?php endwhile; wp_resert_postdata();?>
+        <?php endwhile; ?>
     </div>
 </div>
 

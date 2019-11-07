@@ -3,10 +3,14 @@
 if(!function_exists( style )) {
 
     function style(){
-        wp_enqueue_style('bootstraps','https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css',array(),'4.2.3','all');
+        wp_enqueue_style('bootstraps','https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css', array(),'4.2.3','all');
        // wp_enqueue_style('fontawesome',get_template_directory_uri().'/css/font-awesome.css',array(),'4','all');
         wp_enqueue_style('style',get_stylesheet_uri());
         //wp_enqueue_script('sc6',get_template_directory_uri().'/js/es6.js',array(),'1.0.0',true);
+
+        wp_enqueue_script('jquery');
+        wp_enqueue_script('popper','https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js', array('jquery'),'4.2.3',true);
+        wp_enqueue_script('bootstrap-js','https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js', array('popper'),'4.2.3', true);
 
     }
 
@@ -86,7 +90,7 @@ function maxilofacial() {
         'menu_name'          => _x( 'maxilofacial', 'admin menu', 'biodinamicsmedical' ),
         'name_admin_bar'     => _x( 'maxilofacial', 'add new on admin bar', 'biodinamicsmedical' ),
         'add_new'            => _x( 'Add New', 'book', 'biodinamicsmedical' ),
-        'add_new_item'       => __( 'Add New Pizza', 'biodinamicsmedical' ),
+        'add_new_item'       => __( 'Add New Maxilofacial', 'biodinamicsmedical' ),
         'new_item'           => __( 'New maxilofacial', 'biodinamicsmedical' ),
         'edit_item'          => __( 'Edit maxilofacial', 'biodinamicsmedical' ),
         'view_item'          => __( 'View maxilofacial', 'biodinamicsmedical' ),

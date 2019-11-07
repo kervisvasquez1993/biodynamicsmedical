@@ -1,1 +1,10 @@
-<h1>hola desde single</h1>
+<?php get_header();?>
+
+
+
+
+
+
+
+
+<?php get_footer();?>

@@ -24,7 +24,10 @@
 <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top tamano-navbar">
         <div class="container">
-            <a class="navbar-brand" href="#"><img src="http://biodynamics.dynamics.ve/img/logo/biodynamics-logo.svg" alt="home"></a>
+            <a class="navbar-brand" href="<?php echo esc_url(home_url('/'));?>">
+
+                <img src="http://biodynamics.dynamics.ve/img/logo/biodynamics-logo.svg" alt="home">
+            </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>

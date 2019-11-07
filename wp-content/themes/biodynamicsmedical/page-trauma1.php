@@ -6,9 +6,9 @@
  */
 get_header();?>
 <div class="item active responsive">
-    <?php while(have_posts()): the_post(); ?>
+
         <img src="<?php echo get_the_post_thumbnail_url();?>" class="img-fluid" alt="Responsive image">
-    <?php endwhile;?>
+
 </div>
 <div class="container">
     <div class="row">
