@@ -9,10 +9,9 @@
         <img src="<?php echo $imagen[0];?>" class="img-fluid" alt="Responsive image">
     </div>
 </div>
-
+<h1>hola desde index</h1>
 <div class="conatiner">
     <div class="row row-centered">
-
         <?php if(have_posts()): while(have_posts()): the_post(); ?>
 
         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
