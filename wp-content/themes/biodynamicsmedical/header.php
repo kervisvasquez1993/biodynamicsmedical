@@ -19,12 +19,16 @@
 
     <!--fin-->
 <?php wp_head();?>
+
+
+</head>
 <body>
 
 <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top tamano-navbar">
-        <div class="container">
-            <a class="navbar-brand" href="<?php echo esc_url(home_url('/'));?>">
+
+    <nav class="navbar  navbar-expand-lg navbar-light bg-light">
+        <div class="container wrapper-menu">
+            <a class="navbar-brand img-fluid" href="<?php echo esc_url(home_url('/'));?>">
 
                 <img src="http://biodynamics.dynamics.ve/img/logo/biodynamics-logo.svg" alt="home">
             </a>
@@ -32,33 +36,31 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-lg-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#quienes-somos">Divisón</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#aventura">Contáctanos</a>
-                    </li>
-                    <!-- <li class="nav-item">
-                         <a class="nav-link" href="#blog">Idiomas: <img src="http://biodynamics.dynamics.ve/img/flags/es.png" alt="idioma"></a>
-                     </li>
-                     -->
-                    <li class="nav-item item-personalizado">
-                        <i class="fa fa-search"></i>
-                    </li>
+            <div class="collapse biodynamics-flex navbar-collapse" id="navbarSupportedContent">
 
+                <?php
+                $arg= array(
+                    'theme_location' => 'header_menu',
+                    'container' => 'ul',
 
-                </ul>
+                    'menu_class'      => 'nav navbar-nav navbar-right',
+                    'menu_id' => 'kervis'
 
+                );
+                wp_nav_menu($arg);
+                ?>
+                <form class="form-inline">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+                </form>
             </div>
         </div>
     </nav>
     <!--fin de nav-->
 
     <!--imagen destacada-->
+
 </header>
 
