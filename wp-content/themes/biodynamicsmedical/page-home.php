@@ -18,20 +18,21 @@
                 <div class="page-header text-center">
                     <h3>Linea de productos</h3>
                 </div>
-                <div class="col-xs-12 col-sm-4 col-md-4 text-center">
+
+                <div class="flex-dinamics">
                     <div class="info-card center-block">
                         <div class="front">
                             <img src="<?php the_field('img-biodynamic');?>" alt=" img biodinamics">
-
                         </div>
                         <div class="back bio-text">
                             <h4 class="h2">Dynamics Linea</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, ipsa.
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, ipsa.
                                 <a href="<?php the_field('url_biodynamicsmedical');?>">Leer más</a>
                             </p>
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
         </div>
     </div>

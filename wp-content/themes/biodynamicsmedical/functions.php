@@ -1,4 +1,23 @@
 <?php
+
+// agregar soportes a las imagenes
+    if (function_exists( img__suport)){
+        function img_suport(){
+            // Add Thumbnail Theme Support
+            add_theme_support('post-thumbnails');
+            add_image_size('large', 700, '422', true); // Large Thumbnail
+            add_image_size('medium', 350, '250', true); // Medium Thumbnail
+            add_image_size('small', 120, '', true); // Small Thumbnail
+            add_image_size('custom-size', 700, 200, true); // Custom Thumbnail Size call using the_post_thumbnail('custom-size');
+
+        }
+
+    }
+
+
+
+
+// fin de soporte de imagenes
 // Cargar los estilos y los script de la pagina
 if(!function_exists( style )) {
 

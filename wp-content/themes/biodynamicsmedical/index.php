@@ -9,20 +9,32 @@
         <img src="<?php echo $imagen[0];?>" class="img-fluid" alt="Responsive image">
     </div>
 </div>
-<h1>hola desde index</h1>
+<div class="card" style="width: 18rem;">
+
+
+</div>
 <div class="conatiner">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="page-header">
+
+            </div>
+        </div>
+    </div>
+
     <div class="row row-centered">
         <?php if(have_posts()): while(have_posts()): the_post(); ?>
 
         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
             <div class="main-items">
-                <div class="col-centered">
-                    <a href="<?php the_field('enlaces_division')?>">
-                        <img src="<?php the_post_thumbnail_url();?>" alt="imagen destacada">
-                        <div>
-                            <h2><?php the_title();?></h2>
-                        </div>
-                    </a>
+                <div class="hovereffect col-centered">
+                    <img class="img-responsive" src="<?php the_post_thumbnail_url('small');?>" alt="imagen destacada">
+                </div>
+                <div class="overlay text-center">
+                    <h2>
+                        <?php the_title();?>
+                    </h2>
+                    <a class="info" href="<?php the_field('enlaces_division')?>">Ver más</a>
                 </div>
 
             </div>
