@@ -2,16 +2,14 @@
 <div class="item active responsive">
     <img class="img-responsive" src="<?php echo get_the_post_thumbnail_url();?>" class="img-fluid" alt="Responsive image">
 </div>
-
+<?php while(have_posts()): the_post() ;?>
 <div class="container">
     <div class="row">
     <div class="carousel-row no-gutter">
         <div class=" row slide-row">
             <div class="col-md-6 col-lg-6">
             <div class="slide-content">
-                <h4>About this product</h4>
-                <p> The variable step screws designed to provide rigid fixation. They are not headed allowing being threaded at both ends. </p><br>
-                <p>The step difference between the two threads allows joining two bone fragments Having no head, the screw can enter deeply into the bone and inserted through articular cartilage.</p><p>Bone screw also be used in those cases wanted to obtain a rigid internal fixation of small bone fragments, particularly those in which it is not convenient the presence of a head screw.</p>
+                <?php the_content();?>
             </div>
         </div>
             <div class="col-md-6 col-lg-6">
@@ -27,13 +25,15 @@
                 <!-- The slideshow -->
                 <div class="carousel-inner">
                     <div class="carousel-item item active">
-                        <img src="<?php the_post_thumbnail_url();?>"  class="img-responsive" alt="Los Angeles">
+
+                        <img src="<?php the_field('imagen_principal_producto');?>"  class="img-responsive" alt="Los Angeles">
                     </div>
                     <div class="carousel-item item">
-                        <img src="<?php the_field('imagen-secundaria');?> " alt="Chicago">
+                        <img src="<?php the_field('imagen_secundaria_producto') ;?> " alt="Chicago">
                     </div>
 
                 </div>
+
         </div>
     </div>
         </div>
@@ -52,7 +52,7 @@
                 </div>
                 <div id="collapse0" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingO">
                     <div class="panel-body">
-                        <h1>informacion</h1>
+                        <?php the_field('indicaciones')?>
                     </div>
                 </div>
             </div>
@@ -61,13 +61,44 @@
                     <h4 class="panel-title">
                         <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="true" aria-controls="collapse0" title="Read More">
                             <i class="more-less fa fa-plus" aria-hidden="true"></i>
-                            Indications
+                            Beneficios y caracteristicas
                         </a>
                     </h4>
                 </div>
                 <div id="collapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingO">
                     <div class="panel-body">
-                        <h1>informacion</h1>
+                        <?php the_field('beneficios_y_caracteristicas')?>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingTree">
+                    <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="true" aria-controls="collapse0" title="Read More">
+                            <i class="more-less fa fa-plus" aria-hidden="true"></i>
+                                Caracteristicas tecnicas
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingO">
+                    <div class="panel-body">
+                        <?php the_field('caracteristicas_tecnicas')?>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingTree">
+                    <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="true" aria-controls="collapse0" title="Read More">
+                            <i class="more-less fa fa-plus" aria-hidden="true"></i>
+                            Descargar Archivo
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingO">
+                    <div class="panel-body">
+                        <a href="<?php the_field('archivo')?>">ver mas</a>
+
                     </div>
                 </div>
             </div>
@@ -76,7 +107,7 @@
 
     </div>
 </div>
-
+<?php endwhile;?>
 
 
 
