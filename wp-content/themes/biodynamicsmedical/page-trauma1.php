@@ -11,7 +11,7 @@ get_header();?>
 
 </div>
 <div class="container">
-    <div class="row">
+    <div class="flex-row row">
         <?php $arg= array(
             'post_type' => 'trauma',
             'posts_per_page' => -1,
@@ -19,15 +19,25 @@ get_header();?>
             'order'=> 'ASC' );
         $trauma= new WP_Query($arg);
         while($trauma->have_posts()): $trauma->the_post();?>
-            <div class="card" style="width: 18rem;">
-                <img src="<?php the_post_thumbnail_url()?>" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title"><?php the_title();?></h5>
-                    <p><h1>hola desde test</h1></p>
-                    <a href="<?php the_permalink(); ?>" class="btn btn-primary">Go somewhere</a>
+            <div class="col-xs-6 col-sm-4 col-lg-4">
+                <div class="thumbnail ">
+                    <img src="<?php echo the_post_thumbnail_url();?>" alt="...">
+                    <div class="caption product-description">
+                        <h4><?php the_title();?></h4>
+                        <p class="intro">
+                            A system of locking compression plates (L.C.P) that allows t...
+                        </p>
+                        <hr>
+                        <a class="link-detail" href="<?php the_permalink();?>">
+                            Read More
+                        </a>
+                    </div>
                 </div>
             </div>
-        <?php endwhile; wp_resert_postdata();?>
+        <?php endwhile;?>
+        </div>
+    </div>
+
     </div>
 </div>
 

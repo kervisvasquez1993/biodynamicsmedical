@@ -7,4 +7,3 @@ console.log(el2)
 el.classList.add(['active'],['nav-item'])
 el1.classList.add(['active'],['nav-item'])
 el2.classList.add(['active'],['nav-item'])
-

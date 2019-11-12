@@ -14,6 +14,109 @@ Use it to make something cool, have fun, and share what you've learned with othe
 */
 
 
+
+.carousel-fade .carousel-inner .item {
+    -webkit-transition-property:opacity;
+    transition-property:opacity
+}
+.carousel-fade .carousel-control {
+    z-index:2
+}
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    opacity:0
+}
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+    opacity:1
+}
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    left:0;
+    -webkit-transform:translate3d(0,0,0);
+    transform:translate3d(0,0,0)
+}
+.carousel-row {
+    margin-bottom:10px
+}
+.slide-row {
+    padding:0;
+    background-color:#f0f5f7;
+    min-height:150px;
+    border:0;
+    overflow:hidden;
+    height:auto;
+    position:relative
+}
+.slide-carousel {
+    float:left;
+    display:inline-block
+}
+.slide-carousel .carousel-indicators {
+    margin-bottom:0;
+    bottom:0;
+    background:rgba(0,0,0,.5);
+    width:63%
+}
+.slide-carousel .carousel-indicators li {
+    border-radius:0;
+    width:20px;
+    height:6px
+}
+.slide-carousel .carousel-indicators .active {
+    margin:1px
+}
+.slide-content h4 {
+    margin-bottom:3px;
+    margin-top:0
+}
+.slide-footer {
+    position:absolute;
+    bottom:0;
+    left:20%;
+    width:78%;
+    height:20%;
+    margin:1%
+}
+.slide-content::-webkit-scrollbar {
+    width:5px
+}
+.slide-content::-webkit-scrollbar-thumb:vertical {
+    margin:5px;
+    background-color:#999;
+    -webkit-border-radius:5px
+}
+.slide-content::-webkit-scrollbar-button:start:decrement,
+.slide-content::-webkit-scrollbar-button:end:increment {
+    height:5px;
+    display:block
+}
+.slide-content {
+    padding:20px
+}
+.panel-default>.panel-heading {
+    color:red;
+    background-color:transparent;
+    border-color:transparent
+}
+.panel-default {
+    border-color:transparent
+}
+.panel-title > a {
+    display:block;
+    padding:15px;
+    text-decoration:none
+}
+.more-less {
+    float:right;
+    color:#212121
+}
+
+
 .col-centered,
 .row-centered{
     text-align: center;
@@ -67,7 +170,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
     transform: translate3d(0, 0, 0)
 }
 .hovereffect {
-    background: red !important;
+
 
     margin-bottom: 10px;
     height: 100%;
@@ -78,7 +181,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
     cursor: default
 }
 .hovereffect .overlay {
-    background: aquamarine !important;
     width: 100%;
     height: 100%;
     max-height: 200px;
@@ -287,90 +389,463 @@ header{
 img{
     width: 100% !important;
 }
-
-/*efecto hover sobre imagenes*/
-
-body{
-    margin: 0;
+.thumbnail .caption
+{
+    padding: 9px;
+    color:#333;
+}
+.product-description {
+    background-color:#EFF5F8;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 1em;
+    padding: .4em;
+}
+.slide-row {
     padding: 0;
-    background: #262626
-
-}
-.container-hover{
-    max-width: 1200px;
-    min-height: 500px;
-    margin: 70px auto 0;
-    display: flex;
-    flex-direction:row;
-    flex-wrap: wrap;
-}
-
-.container-hover .box-hover{
+    background-color:
+            #f0f5f7;
+    min-height: 150px;
+    border: 0;
+    overflow: hidden;
+    height: auto;
     position: relative;
-    width: 300px;
-    height: 166.66px;
-    background: red;
-    margin: 10px;
-    box-sizing: border-box;
-    display: inline-block;
 }
-.container-hover .box-hover .imgBoxBio{
+.row.no-gutter {
+    margin-left: 0;
+    margin-right: 0;
+}
+.slide-content {
+    padding: 20px;
+}
+p{
+    font-size: 24px;
+    letter-spacing: 1px;
+    line-height: 28px;
+}
+.slide-content h4 {
+    margin-bottom: 3px;
+    margin-top: 0;
+}
+.slide-carousel .carousel-indicators {
+    margin-bottom: 0;
+    bottom: 0;
+    background:rgba(0,0,0,.5);
+    width: 63%;
+}
+
+.carousel-inner {
+
     position: relative;
+    width: 100%;
     overflow: hidden;
 
 }
-.container-hover .box-hover .imgBoxBio img{
-    max-width: 100%;
+/**----------------------------**/
+.carousel-fade .carousel-inner .item {
+    -webkit-transition-property:opacity;
+    transition-property:opacity
+}
+.carousel-fade .carousel-control {
+    z-index:2
+}
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    opacity:0
+}
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+    opacity:1
+}
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    left:0;
+    -webkit-transform:translate3d(0,0,0);
+    transform:translate3d(0,0,0)
+}
+.carousel-row {
+    margin-bottom:10px
+}
+.slide-row {
+    padding:0;
+    background-color:#f0f5f7;
+    min-height:150px;
+    border:0;
+    overflow:hidden;
+    height:auto;
+    position:relative
+}
+.slide-carousel {
+    float:left;
+    display:inline-block
+}
+.slide-carousel .carousel-indicators {
+    margin-bottom:0;
+    bottom:0;
+    background:rgba(0,0,0,.5);
+    width:63%
+}
+.slide-carousel .carousel-indicators li {
+    border-radius:0;
+    width:20px;
+    height:6px
+}
+.slide-carousel .carousel-indicators .active {
+    margin:1px
+}
+.slide-content h4 {
+    margin-bottom:3px;
+    margin-top:0
+}
+.slide-footer {
+    position:absolute;
+    bottom:0;
+    left:20%;
+    width:78%;
+    height:20%;
+    margin:1%
+}
+.slide-content::-webkit-scrollbar {
+    width:5px
+}
+.slide-content::-webkit-scrollbar-thumb:vertical {
+    margin:5px;
+    background-color:#999;
+    -webkit-border-radius:5px
+}
+.slide-content::-webkit-scrollbar-button:start:decrement,
+.slide-content::-webkit-scrollbar-button:end:increment {
+    height:5px;
+    display:block
+}
+.slide-content {
+    padding:20px
+}
+.panel-default>.panel-heading {
+    color:red;
+    background-color:transparent;
+    border-color:transparent
+}
+.panel-default {
+    border-color:transparent
+}
+.panel-title > a {
+    display:block;
+    padding:15px;
+    text-decoration:none
+}
+.more-less {
+    float:right;
+    color:#212121
+}
+
+/** small CSS **
+ */
+
+/*!
+ * Start Bootstrap - Small Business (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html {
+    position: relative;
     min-height: 100%;
-    transition:  transform 2s;
 }
-
-.container-hover .box-hover:hover .imgBoxBio img{
-    transform: scale(1);
+.navbar-toggle .icon-bar {
+    -webkit-transition: opacity, -webkit-transform;
+    transition: opacity, -webkit-transform;
+    transition: opacity, transform;
+    transition: opacity, transform, -webkit-transform;
+    -webkit-transition-duration: 200ms;
+    transition-duration: 200ms;
+    -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0, 0.7);
+    transition-timing-function: cubic-bezier(0.7, 0, 0, 0.7);
 }
-
-
-.container-hover .box-hover .detail-bio{
+.navbar-toggle:not(.collapsed) .icon-bar:nth-child(1) {
+    -webkit-transform: translateY(6px) rotate(45deg);
+    transform: translateY(6px) rotate(45deg);
+}
+.navbar-toggle:not(.collapsed) .icon-bar:nth-child(2) {
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+.navbar-toggle:not(.collapsed) .icon-bar:nth-child(3) {
+    -webkit-transform: translateY(-6px) rotate(-45deg);
+    transform: translateY(-6px) rotate(-45deg);
+}
+.navbar-inverse .navbar-toggle {
+    border-color: #000;
+}
+.navbar-inverse .navbar-toggle:focus,
+.navbar-inverse .navbar-toggle:hover {
+    background-color: transparent;
+}
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #000;
+}
+.navbar-inverse .navbar-collapse,
+.navbar-inverse .navbar-form {
+    border-color: transparent;
+}
+.navbar-nav>.open>a,
+.navbar-inverse .navbar-nav>.open>a:focus,
+.navbar-inverse .navbar-nav>.open>a:hover {
+    color: #fff;
+    background-color: #9eb5d0;
+}
+.footer-distributed {
+    background-color: #f0f5f7;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
     width: 100%;
+    text-align: left;
+    font: normal 16px sans-serif;
+    padding: 45px 50px;
+    margin-top: 20px;
+}
+.footer-distributed p {
+    color: #484848;
+    font-size: 14px;
+    margin: 0;
+}
+.footer-distributed h4 {
+    color: #484848;
+    margin-top: 4px;
+}
+.footer-distributed a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: #484848;
+}
+.footer-distributed a:hover {
+    color: #ff6160;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 600px) {
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-right {
+        text-align: center;
+    }
+    .footer-distributed .footer-right {
+        float: none;
+        margin: 0 auto 20px;
+    }
+    .footer-distributed .footer-left p.footer-links {
+        line-height: 1.8;
+    }
+}
+
+/* navbar
+    line height is 20px by default so add 30px top and bottom to equal the new .navbar-brand 80px height  */
+
+.BioDynamics-menu .navbar-brand {
+    height: 80px;
+}
+.BioDynamics-menu .nav>li>a {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.BioDynamics-menu .navbar-toggle {
+    padding: 10px;
+    margin: 25px 15px 25px 0;
+}
+.navbar-brand {
+    padding: 0px;
+}
+.navbar-brand>img {
     height: 100%;
-    position: absolute;
+    padding: 19px;
+    width: auto;
+}
+.navbar-inverse {
+    background-color: #fff;
+    border-color: #fff;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: #484848;
+}
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.active>a:focus,
+.navbar-inverse .navbar-nav>.active>a:hover {
+    color: #484848;
+    background-color: #9eb5d0;
+}
+.navbar-inverse .navbar-nav>li>a:focus,
+.navbar-inverse .navbar-nav>li>a:hover {
+    color: #000;
+    background-color: transparent;
+}
+#search {
+    position: fixed;
     top: 0px;
     left: 0px;
-    bottom: 0px;
-    right: 0px;
-    background: rgba(0,0,0,0.5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transform: scaleY(0);
-    transition: transform .5s;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+    opacity: 0;
 }
-.container-hover .box-hover:hover .detail-bio{
-    transform: scaleY(1);
+#search.open {
+    opacity: 0.8;
+    z-index: 9999;
 }
-
-.container-hover .box-hover .detail-bio .content-bio{
+#search input[type="search"] {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0);
+    font-size: 60px;
+    font-weight: 300;
     text-align: center;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    color:#ffff;
-    margin: 10px
+    border: 0px;
+    margin: 0px auto;
+    margin-top: -51px;
+    padding-left: 30px;
+    padding-right: 30px;
+    outline: none;
 }
-.container-hover .box-hover .detail-bio .content-bio h2	{
-    margin: 0;
-    padding: 0;
-    font-size: 20px;
-    color: #ff0;
-
+#search .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 61px;
+    margin-left: -45px;
+}
+#search .close {
+    position: fixed;
+    top: 19px;
+    right: 12px;
+    color: #FF3B30;
+    opacity: 1;
+    padding: 10px 17px;
+    font-size: 27px;
+}
+.page-header {
+    border-bottom: 0;
+}
+.btn-red {
+    color: #fff;
+    background-color: #ff6160;
+    border-color: #ff6160;
+}
+.btn-red:hover {
+    color: #fff;
+    background-color: tomato;
+    border-color: #ff6160;
+}
+.breadcrumb {
+    background-color: transparent;
+    margin-top: 20px
+}
+.img-responsive {
+    margin: 0 auto;
 }
 
-.container-hover .box-hover .detail-bio .content-bio p	{
-    margin: 10px 0 0;
-    padding: 0;
-}
+/**
+*Helpers
+*
+*/
 
-/* fin de efecto hover*/
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+    background-color: #FFF;
+}
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #FFF;
+}
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #1F1F21;
+}
+.row.no-gutter {
+    margin-left: 0;
+    margin-right: 0;
+}
+.row.no-gutter [class*='col-']:not(:first-child),
+.row.no-gutter [class*='col-']:not(:last-child) {
+    padding-right: 0;
+    padding-left: 0;
+}
+.wait {
+    position: fixed;
+    z-index: 1001;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: Black;
+    filter: alpha(opacity=60);
+    opacity: 0.6;
+    -moz-opacity: 0.8;
+}
+.center {
+    z-index: 1000;
+    margin: 300px auto;
+    padding: 10px;
+    width: 130px;
+    border-radius: 10px;
+    filter: alpha(opacity=100);
+    opacity: 1;
+    -moz-opacity: 1;
+}
+.spinner {
+    margin: 100px auto 0;
+    width: 70px;
+    text-align: center;
+}
+.spinner>div {
+    width: 18px;
+    height: 18px;
+    background-color: #fff;
+    border-radius: 100%;
+    display: inline-block;
+    -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+    animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+.spinner .bounce1 {
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s;
+}
+.spinner .bounce2 {
+    -webkit-animation-delay: -0.16s;
+    animation-delay: -0.16s;
+}
+@-webkit-keyframes sk-bouncedelay {
+    0%,
+    80%,
+    100% {
+        -webkit-transform: scale(0)
+    }
+    40% {
+        -webkit-transform: scale(1.0)
+    }
+}
+@keyframes sk-bouncedelay {
+    0%,
+    80%,
+    100% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    40% {
+        -webkit-transform: scale(1.0);
+        transform: scale(1.0);
+    }
+}
