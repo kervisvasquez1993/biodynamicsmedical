@@ -21,11 +21,12 @@ get_header();?>
         while($trauma->have_posts()): $trauma->the_post();?>
             <div class="col-xs-6 col-sm-4 col-lg-4">
                 <div class="thumbnail ">
-                    <img src="<?php echo the_post_thumbnail_url();?>" alt="...">
+                    <img src="<?php the_field('imagen_principal_producto');?>" alt="...">
                     <div class="caption product-description">
                         <h4><?php the_title();?></h4>
                         <p class="intro">
-                            A system of locking compression plates (L.C.P) that allows t...
+
+                            <?php the_excerpt();?>
                         </p>
                         <hr>
                         <a class="link-detail" href="<?php the_permalink();?>">

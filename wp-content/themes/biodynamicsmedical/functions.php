@@ -1,5 +1,13 @@
 <?php
+/*
+ * agregamos funciones para crear tabla en base de datos
+*/
 
+require get_template_directory().'/inc/database.php';
+require get_template_directory().'/inc/contacto.php';
+require get_template_directory().'/inc/option.php';
+
+/* fin de script para crear tabla en base de datos*/
 // agregar soportes a las imagenes
     if (function_exists( img__suport)){
         function img_suport(){
@@ -22,6 +30,10 @@
 if(!function_exists( style )) {
 
     function style(){
+        wp_enqueue_style('raleweay','https://fonts.googleapis.com/css?family=Raleway&display=swap',array(), '1.0.0'.'all');
+        wp_enqueue_style('Oxygen','https://fonts.googleapis.com/css?family=Oxygen&display=swap',array(),'1.0.0','all');
+        wp_enqueue_style('abel','https://fonts.googleapis.com/css?family=Abel&display=swap', array(),'1.0.0','all');
+        wp_enqueue_style('News Cycle','https://fonts.googleapis.com/css?family=News+Cycle&display=swap',array(),'1.0.0','all');
         wp_enqueue_style('bootstraps','https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css', array(),'4.2.3','all');
         wp_enqueue_style('font-awesome','https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', array(),'4.7.0'.'all');
        // wp_enqueue_style('fontawesome',get_template_directory_uri().'/css/font-awesome.css',array(),'4','all');
@@ -63,7 +75,43 @@ if(!function_exists(biodynamicsmedical_setup)){
 
     add_action('after_setup_theme','biodynamicsmedical_setup');
 }
+// configuracion de longitud del extracto
+function extracto_longitud($length){
+    return 20;
+}
+add_filter( 'excerpt_length','extracto_longitud',999 );
 
+
+// fin de longitud de extracto
+
+// invocacion de widget
+if(!function_exists(interwebsite_widget)){
+    function interwebsite_widget(){
+        register_sidebar(
+            array(
+                'name' => 'form_widget',
+                'id' => 'form',
+                'before_widget' => '<div class="widget">',
+                'after_widget' => '</div>',
+                'before_title' => '<h3>',
+                'after_title' => '</h3>'
+            ));
+
+    }
+
+// fin de widget
+add_action('widgets_init','interwebsite_widget');
+}
+/*filtro de busqueda
+function my_custom_searchengine($query) {
+    if ($query->is_search && !is_admin()) {
+        $query->set('post_type', array('post'));
+    }
+    return $query;
+}
+add_filter('pre_get_posts', 'my_custom_searchengine');
+*/
+// fin de busqueda
 //custom posts type para la primera seccion trauma
 
 add_action( 'init', 'trauma' );

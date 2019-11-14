@@ -17,11 +17,19 @@ get_header();?>
             'order'=> 'ASC' );
         $otros_productos= new WP_Query($arg);
         while($otros_productos->have_posts()): $otros_productos->the_post();?>
-            <div class="card" style="width: 18rem;">
-                <img src="<?php the_post_thumbnail_url();?>" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title"><?php the_title();?></h5>
-                    <a href="<?php the_permalink(); ?>" class="btn btn-primary">Go somewhere</a>
+            <div class="col-xs-6 col-sm-4 col-lg-4">
+                <div class="thumbnail ">
+                    <img src="<?php the_field('imagen_principal_producto');?>" alt="...">
+                    <div class="caption product-description">
+                        <h4><?php the_title();?></h4>
+                        <p class="intro">
+                            <?php the_excerpt();?>
+                        </p>
+                        <hr>
+                        <a class="link-detail" href="<?php the_permalink();?>">
+                            Read More
+                        </a>
+                    </div>
                 </div>
             </div>
         <?php endwhile; ?>

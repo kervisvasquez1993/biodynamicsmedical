@@ -13,7 +13,36 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 
+/*cargar las fuentes de google */
+    @font-face {
+        font-family: 'raleweay';
+    }
 
+.releweay{
+    font-family: 'releweay';
+}
+
+@font-face {
+    font-family: 'Oxygen';
+}
+.oxygen{
+    font-family: 'Oxygen';
+}
+@font-face {
+    font-family: 'abel';
+}
+.abel{
+    font-family: 'abel';
+}
+@font-face {
+    font-family: 'News Cycle';
+}
+.NewsCycle{
+    font-family: 'News Cycle';
+}
+
+
+/* fin de la seccion de fuentes*/
 
 .carousel-fade .carousel-inner .item {
     -webkit-transition-property:opacity;
@@ -132,7 +161,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 .carousel {
     height: 50%
 }
-.item,
+.carousel-item,
 .active,
 .carousel-inner {
     height: 100%
@@ -144,14 +173,14 @@ Use it to make something cool, have fun, and share what you've learned with othe
     background-size: cover;
     -o-background-size: cover
 }
-.carousel-fade .carousel-inner .item {
+.carousel-fade .carousel-inner .carousel-item{
     -webkit-transition-property: opacity;
     transition-property: opacity
 }
 .carousel-fade .carousel-control {
     z-index: 2
 }
-.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .carousel-item,
 .carousel-fade .carousel-inner .active.left,
 .carousel-fade .carousel-inner .active.right {
     opacity: 0
@@ -848,4 +877,26 @@ html {
         -webkit-transform: scale(1.0);
         transform: scale(1.0);
     }
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+.carousel-item{
+    width: 350px;
+    height: 300px;
+}
+.carousel{
+    width: 350px;
+    height: 300px;
+}
+
+.not-found a{
+    min-width: 100vw;
+
+}
+.not-found a img {
+    width: 100%;
+    height: 100%;
 }

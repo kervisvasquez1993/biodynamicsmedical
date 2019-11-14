@@ -13,7 +13,7 @@
             </div>
         </div>
             <div class="col-md-6 col-lg-6">
-            <div id="carousel-1" class="carousel slide carousel slide carousel-fade slide-carousel" data-ride="carousel">
+                <div id="carousel-1" class="carousel slide carousel slide carousel-fade slide-carousel" data-ride="carousel">
 
                 <!-- Indicators -->
                 <ul class="carousel-indicators">
@@ -24,29 +24,29 @@
 
                 <!-- The slideshow -->
                 <div class="carousel-inner">
-                    <div class="carousel-item item active">
+                    <div class="carousel-item  active">
 
-                        <img src="<?php the_field('imagen_principal_producto');?>"  class="img-responsive" alt="Los Angeles">
+                        <img src="<?php the_field('imagen_principal_producto');?>"  class="<?php the_field('alt_imagenes');?>" alt="Los Angeles">
                     </div>
-                    <div class="carousel-item item">
-                        <img src="<?php the_field('imagen_secundaria_producto') ;?> " alt="Chicago">
+                    <div class="carousel-item ">
+                        <img src="<?php the_field('imagen_secundaria_producto') ;?>" alt="Chicago">
                     </div>
 
                 </div>
-
-        </div>
-    </div>
+                </div>
+            </div>
         </div>
     </div>
     </div>
     <div class="row">
+        <div class="col-lg-12">
         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
             <div class="panel panel-default">
                 <div class="panel-heading" role="tab" id="headingOne">
                     <h4 class="panel-title">
                         <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse0" aria-expanded="true" aria-controls="collapse0" title="Read More">
                             <i class="more-less fa fa-plus" aria-hidden="true"></i>
-                            Indications
+                            <p><?php the_field('indicaciones_text');?></p>
                         </a>
                     </h4>
                 </div>
@@ -61,7 +61,7 @@
                     <h4 class="panel-title">
                         <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="true" aria-controls="collapse0" title="Read More">
                             <i class="more-less fa fa-plus" aria-hidden="true"></i>
-                            Beneficios y caracteristicas
+                            <p><?php the_field('beneficiosCaracteristica_text');?></p>
                         </a>
                     </h4>
                 </div>
@@ -76,7 +76,7 @@
                     <h4 class="panel-title">
                         <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="true" aria-controls="collapse0" title="Read More">
                             <i class="more-less fa fa-plus" aria-hidden="true"></i>
-                                Caracteristicas tecnicas
+                                <p><?php the_field('caracteristicasTecnicas_text');?></p>
                         </a>
                     </h4>
                 </div>
@@ -91,7 +91,7 @@
                     <h4 class="panel-title">
                         <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="true" aria-controls="collapse0" title="Read More">
                             <i class="more-less fa fa-plus" aria-hidden="true"></i>
-                            Descargar Archivo
+                            <p><?php the_field('archivos_text');?></p>
                         </a>
                     </h4>
                 </div>
@@ -105,6 +105,7 @@
 
 </div>
 
+    </div>
     </div>
 </div>
 <?php endwhile;?>

@@ -16,7 +16,7 @@
 
 
                 <div class="page-header text-center">
-                    <h3>Linea de productos</h3>
+                    <h3><?php the_field('lineaProductos');?></h3>
                 </div>
 
                 <div class="flex-dinamics">
@@ -25,9 +25,9 @@
                             <img src="<?php the_field('img-biodynamic');?>" alt=" img biodinamics">
                         </div>
                         <div class="back bio-text">
-                            <h4 class="h2">Dynamics Linea</h4>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, ipsa.
-                                <a href="<?php the_field('url_biodynamicsmedical');?>">Leer más</a>
+                            <h4 class="h2"><?php the_field('linea_Dinamics');?></h4>
+                              <p><?php the_field('dinamics_descripcion');?>
+                                <a href="<?php the_field('url_biodynamicsmedical');?>"><?php the_field('leer_mas');?></a>
                             </p>
                         </div>
                     </div>
@@ -37,6 +37,13 @@
         </div>
     </div>
 
+<center>
+<h1>test de font para la pagina</h1>
+   <h1 class="releweay">relaweays</h1>
+    <h1 class="Oxygen">Oxygen</h1>
+    <h1 class="abel"> abel</h1>
+    <h1 class="NewsCycle"> NewsCycle</h1>
+</center>
 
 
 <?php get_footer();?>
