@@ -3,6 +3,9 @@
  * agregamos funciones para crear tabla en base de datos
 */
 
+
+/* Start your code here */
+
 require get_template_directory().'/inc/database.php';
 require get_template_directory().'/inc/contacto.php';
 require get_template_directory().'/inc/option.php';
@@ -112,6 +115,11 @@ function my_custom_searchengine($query) {
 add_filter('pre_get_posts', 'my_custom_searchengine');
 */
 // fin de busqueda
+
+add_filter('pll_get_post_types', 'mi_pll_con_custom_post_types');
+function mi_pll_con_custom_post_types($types) {
+    return array_merge($types, array('trauma' => 'trauma'));
+}
 //custom posts type para la primera seccion trauma
 
 add_action( 'init', 'trauma' );
@@ -152,6 +160,7 @@ function trauma() {
 
     register_post_type( 'trauma', $args );
 }
+
 
 /* regisro del segundo custom post type maxilofacial*/
 add_action( 'init', 'maxilofacial' );

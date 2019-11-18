@@ -11,7 +11,7 @@
 
     <h2 class="spantaran color-principal"><?php the_title();?></h2>
     <p><?php the_excerpt();?></p>
-    <a href="<?php the_permalink();?>" class="montserrat-dos color-principal">Leer Más</a>
+    <a href="<?php the_permalink();?>" class="montserrat-dos color-principal">Read more</a>
     </div>
 
 

@@ -97,7 +97,7 @@
                 </div>
                 <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingO">
                     <div class="panel-body">
-                        <a href="<?php the_field('archivo')?>">ver mas</a>
+                        <a href="<?php the_field('archivo')?>"></a>
 
                     </div>
                 </div>

@@ -51,7 +51,9 @@
                 ?>
                 <?php get_search_form();?>
             </div>
+
         </div>
+        <?php if ( function_exists( 'mltlngg_display_switcher' ) ) mltlngg_display_switcher(); ?>
     </nav>
     <!--fin de nav-->
 
