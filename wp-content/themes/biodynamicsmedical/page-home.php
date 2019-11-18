@@ -7,6 +7,10 @@
         </div>
         <?php endwhile;?>
     </div>
+    <div>
+        <span> <a href="<?php the_field('url-home');?>">Home</a> /</span>
+
+    </div>
     <div class="container">
         <div class="row">
             <div class="col-md-12 col-centered col-sm-12 col-lg-12">

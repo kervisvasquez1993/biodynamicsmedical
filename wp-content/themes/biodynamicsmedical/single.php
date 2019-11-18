@@ -3,6 +3,14 @@
     <img class="img-responsive" src="<?php echo get_the_post_thumbnail_url();?>" class="img-fluid" alt="Responsive image">
 </div>
 <?php while(have_posts()): the_post() ;?>
+    <div class="card">
+        <div class="card">
+   <span> <a href="<?php the_field('url-home');?>">Home</a> /
+       <a href="<?php the_field('url-divisiones');?>">Divisiones</a> /
+       <a href="<?php the_field('url-trauma');?>">Trauma</a> /
+        <?php the_title(); ?>
+   </span>
+        </div>
 <div class="container">
     <div class="row">
     <div class="carousel-row no-gutter">

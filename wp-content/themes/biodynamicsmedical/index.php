@@ -9,8 +9,9 @@
         <img src="<?php echo $imagen[0];?>" class="img-fluid" alt="Responsive image">
     </div>
 </div>
-<div class="card" style="width: 18rem;">
-
+<div class="card">
+    <span> <a href="<?php the_field('url-home');?>">Home</a> /
+        <a href="<?php the_field('url-divisiones');?>">Divisiones</a></span>
 
 </div>
 <div class="conatiner">
@@ -21,22 +22,7 @@
             </div>
         </div>
     </div>
-<!--
-     <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-            <div class="main-items">
-                <div class="hovereffect col-centered">
-                    <img class="img-responsive" src="<?/*php the_post_thumbnail_url('small');*/?>" alt="imagen destacada">
-                </div>
-                <div class="overlay text-center">
-                    <h2>
-                        <?php /* the_title() */;?>
-                    </h2>
-                    <a class="info" href="<?php /* the_field('enlaces_division') */?>">Ver más</a>
-                </div>
 
-            </div>
-        </div>
--->
     <div class="container">
         <div class="row">
             <div class="col-lg-12">

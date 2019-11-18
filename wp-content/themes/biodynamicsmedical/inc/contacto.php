@@ -31,5 +31,3 @@ function biodynamics_guardar(){
     endif;
 }
 
-
-add_action('init','biodynamics_guardar');

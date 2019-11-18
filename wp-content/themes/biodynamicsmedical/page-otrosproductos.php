@@ -8,6 +8,11 @@ get_header();?>
         <img class="img-responsive" src="<?php echo get_the_post_thumbnail_url();?>" class="img-fluid" alt="Responsive image">
 
 </div>
+<div class="card">
+   <span> <a href="<?php the_field('url-home');?>">Home</a> /
+       <a href="<?php the_field('url-divisiones');?>">Divisiones</a> /
+       <a href="<?php the_field('url-otros-productos');?>">Otros Productos</a></span>
+</div>
 <div class="container">
     <div class="row">
         <?php $arg= array(
