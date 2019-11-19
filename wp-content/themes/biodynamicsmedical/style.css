@@ -900,3 +900,15 @@ html {
     width: 100%;
     height: 100%;
 }
+
+.linea-biodynamics{
+    display: flex;
+
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.linea-biodynamics img {
+    width: 150px !important;
+
+}

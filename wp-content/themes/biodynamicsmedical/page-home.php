@@ -13,17 +13,16 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-md-12 col-centered col-sm-12 col-lg-12">
+            <div class="col-md-4 col-centered col-sm-12 col-lg-4">
+
                 <p>
                     <?php the_content();?>
                 </p>
 
 
-                <div class="page-header text-center">
-                    <h3><?php the_field('lineaProductos');?></h3>
-                </div>
 
-                <div class="flex-dinamics">
+
+                <!-- <div class="flex-dinamics">
                     <div class="info-card center-block">
                         <div class="front">
                             <img src="<?php the_field('img-biodynamic');?>" alt=" img biodinamics">
@@ -35,19 +34,92 @@
                             </p>
                         </div>
                     </div>
+                </div> -->
+            </div>
+
+            <div class="col-md-8 col-centered col-sm-12 col-lg-8">
+                <div class="page-header text-center">
+                    <h3 class="linea-biodynamics"><?php the_field('lineaProductos');?>  <img src="<?php  echo get_template_directory_uri();?>/img/biodynamics.jpg" alt="biodynamics"> </h3>
+
                 </div>
+                <div class="row row-centered">
+                <div class="col-lg-6 col-md-12 col-xs-12">
+                    <div class="main-items">
+                        <div class="hovereffect col-centered">
+                            <img class="img-responsive" src="<?php the_field('img-card-trauma');?>" alt="">
+                            <div class="overlay text-center">
+                                <h2>
+                                    <a href="<?php the_field('url-trauma');?>">
+                                        Trauma
+                                    </a>
+                                </h2>
+                                <a class="info" href="<?php the_field('url-trauma');?>">
+                                    click here
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                    <div class="col-lg-6 col-md-12 col-xs-12">
+                        <div class="main-items">
+                            <div class="hovereffect col-centered">
+                                <img class="img-responsive" src="<?php the_field('img-card-columna');?>" alt="">
+                                <div class="overlay text-center">
+                                    <h2>
+                                        <a href="<?php the_field('url-columna')?>">
+                                            COLUMNA
+                                        </a>
+                                    </h2>
+                                    <a class="info" href="<?php the_field('url-columna')?>">
+                                        click here
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <div class="col-lg-6 col-md-12 col-xs-12">
+                    <div class="main-items">
+                        <div class="hovereffect col-centered">
+                            <img class="img-responsive" src="<?php the_field('img-card-maxilof');?>" alt="">
+                            <div class="overlay text-center">
+                                <h2>
+                                    <a href="<?php the_field('url-maxilofacial ')?>">
+                                        MAXILOFACIAL
+                                    </a>
+                                </h2>
+                                <a class="info" href="<?php the_field('url-maxilofacial')?>">
+                                    click here
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <div class="col-lg-6 col-md-12 col-xs-12">
+                        <div class="main-items">
+                            <div class="hovereffect col-centered">
+                                <img class="img-responsive" src="<?php the_field('img-card-otros-productos');?>" alt="">
+                                <div class="overlay text-center">
+                                    <h2>
+                                        <a href="<?php the_field('url-otros-productos')?>">
+                                            OTROS PRODUCTOS
+                                        </a>
+                                    </h2>
+                                    <a class="info" href="<?php the_field('url-otros-productos')?>">
+                                        click here
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
             </div>
             </div>
         </div>
     </div>
 
-<center>
-<h1>test de font para la pagina</h1>
-   <h1 class="releweay">relaweays</h1>
-    <h1 class="Oxygen">Oxygen</h1>
-    <h1 class="abel"> abel</h1>
-    <h1 class="NewsCycle"> NewsCycle</h1>
-</center>
+
 
 
 <?php get_footer();?>
