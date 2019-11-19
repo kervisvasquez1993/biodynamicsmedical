@@ -8,11 +8,13 @@
         <?php endwhile;?>
     </div>
     <div>
-        <span> <a href="<?php the_field('url-home');?>">Home</a> /</span>
+
 
     </div>
     <div class="container">
+        <span> <a href="<?php the_field('url-home');?>">Home</a> /</span>
         <div class="row">
+
             <div class="col-md-4 col-centered col-sm-12 col-lg-4">
 
                 <p>
@@ -39,7 +41,7 @@
 
             <div class="col-md-8 col-centered col-sm-12 col-lg-8">
                 <div class="page-header text-center">
-                    <h3 class="linea-biodynamics"><?php the_field('lineaProductos');?>  <img src="<?php  echo get_template_directory_uri();?>/img/biodynamics.jpg" alt="biodynamics"> </h3>
+                    <h3 class="linea-biodynamics"><?php the_field('lineaProductos');?> </h3>
 
                 </div>
                 <div class="row row-centered">

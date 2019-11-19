@@ -9,12 +9,14 @@
         <img src="<?php echo $imagen[0];?>" class="img-fluid" alt="Responsive image">
     </div>
 </div>
-<div class="card">
-    <span> <a href="<?php the_field('url-home');?>">Home</a> /
-        <a href="<?php the_field('url-divisiones');?>">Divisiones</a></span>
 
-</div>
-<div class="conatiner">
+<div class="container">
+
+    <span> <a href="<?php the_field('url-home');?>">Home</a> /
+        <a href="<?php the_field('url-divisiones');?>">Divisiones</a>
+    </span>
+
+
     <div class="row">
         <div class="col-lg-12">
             <div class="page-header">

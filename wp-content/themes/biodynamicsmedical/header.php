@@ -43,17 +43,19 @@
                     'theme_location' => 'header_menu',
                     'container' => 'ul',
 
-                    'menu_class'      => 'nav navbar-nav navbar-right',
+                    'menu_class'      => 'nav navbar-nav navbar-right barra-menu',
                     'menu_id' => 'kervis'
 
                 );
                 wp_nav_menu($arg);
                 ?>
+                <div class="kervis-flex">
                 <?php get_search_form();?>
+                </div>
             </div>
 
         </div>
-        <?php if ( function_exists( 'mltlngg_display_switcher' ) ) mltlngg_display_switcher(); ?>
+
     </nav>
     <!--fin de nav-->
 

@@ -388,15 +388,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
     width: 33%;
     text-align: center;}
 
-.biodynamics-flex{
-    display: flex;
-    align-items: center;
-}
-.biodynamics-flex form{
-    margin-bottom: 10px !important;
-    margin-left: 10px;
-    width: 25vw;
-}
+
 .form-control{
     font-size: 0.7rem;
 }
@@ -910,5 +902,30 @@ html {
 }
 .linea-biodynamics img {
     width: 150px !important;
+}
+.biodynamics-flex{
+    display: flex;
+    align-items: center;
+}
+.biodynamics-flex form{
+    margin-bottom: 10px !important;
+    margin-left: 10px;
+    width: 25vw;
+}
+@media screen and (max-width: 992px){
+   .biodynamics-flex{
+       background: blue;
+       justify-content: flex-start;
+       width: 100%;
+       height: 20vh;
+ }
+    .barra-menu{
+        display: flex;
+        background: red;
+
+    }
+    .kervis-flex{
+        background: yellow;
+    }
 
 }
