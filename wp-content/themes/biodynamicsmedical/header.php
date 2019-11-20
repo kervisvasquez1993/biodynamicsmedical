@@ -43,7 +43,7 @@
                     'theme_location' => 'header_menu',
                     'container' => 'ul',
 
-                    'menu_class'      => 'nav navbar-nav navbar-right',
+                    'menu_class'      => 'kervis-nav',
                     'menu_id' => 'kervis'
 
                 );
