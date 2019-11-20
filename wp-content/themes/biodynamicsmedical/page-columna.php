@@ -10,14 +10,12 @@ get_header();?>
 
 </div>
 
-<div class="card">
-    <div class="card">
-   <span> <a href="<?php the_field('url-home');?>">Home</a> /
+
+<div class="container">
+     <span> <a href="<?php the_field('url-home');?>">Home</a> /
        <a href="<?php the_field('url-divisiones');?>">Divisiones</a> /
        <a href="<?php the_field('url-columna');?>">Columna</a></span>
-    </div>
-</div>
-<div class="container">
+
     <div class="row">
         <?php $arg= array(
             'post_type' => 'columna',
