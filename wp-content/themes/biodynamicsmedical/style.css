@@ -404,8 +404,7 @@ header{
 
 .flex-dinamics{
     display: flex;
-    justify-content: center;
-}
+    justify-content: center;}
 
 img{
     width: 100% !important;
@@ -903,30 +902,93 @@ html {
 .linea-biodynamics img {
     width: 150px !important;
 }
+/* mejora del nav */
 .biodynamics-flex{
     display: flex;
-    align-items: center;
+    align-items: flex-end !important;
+    height: 5vh;
+
+    justify-content: flex-end;
 }
+.kervis-nav{
+    display: flex;
+
+    width: 50%;
+    justify-content: space-evenly;
+}
+.kervis-nav li{
+    list-style: none;
+}
+
+
 .biodynamics-flex form{
     margin-bottom: 10px !important;
     margin-left: 10px;
     width: 25vw;
 }
+.form-control{
+    font-size: 0.7rem;
+}
+form.form-inline .btn{
+
+    font-size: 0.65rem;
+
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-dinamics{
+    display: flex;
+    justify-content: center;
+}
+@media screen and (max-width: 992px) {
+    .kervis-nav{
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 0px;
+
+    }
+    .biodynamics-flex{
+        flex-direction: column;
+        height: 28vh;
+        align-items:flex-start !important;
+        justify-content: flex-start;
+        padding: 0 80px;
+
+
+    }
+
+    .biodynamics-flex form{
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0 ;
+        height: 100%;
+
+    }
+    form.form-inline .btn{
+
+        font-size: 0.65rem;
+        margin: 0px;
+    }
+}
+/*fin de mejora del nav*/
+@media screen and (max-width: 468px) {
+    .biodynamics-flex{
+        height: 30vh;;
+    }
+}
 @media screen and (max-width: 992px){
-   .biodynamics-flex{
-       background: blue;
-       justify-content: flex-start;
-       width: 100%;
-       height: 20vh;
- }
+
     .barra-menu{
         display: flex;
         background: red;
 
     }
-    .kervis-flex{
-        background: yellow;
-    }
+
 
 }
 
