@@ -23,71 +23,30 @@
 
 </head>
 <body>
-
 <header>
-
-<nav>
-    <div class="logo-bio">
-        <img src="" alt="">
-    </div>
-    <div class="icono" id="icono">
-        <span>&#9776;</span>
-    </div>
-    <div class="enlaces uno" id="enlces">
-        <a href="#">hola1</a>
-        <a href="#">hola2</a>
-        <a href="#">hola3</a>
-    </div>
-
-</nav>
-
-
-
-
-
-
-
-<!--
-    <nav class="navbar">
-        <div class="container wrapper-menu">
-            <a class="navbar-brand img-fluid" href="<?php echo esc_url(home_url('/'));?>">
-
-                <img src="<?php echo get_template_directory_uri().'/img/biodynamics.png'?>" alt="home">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse biodynamics-flex navbar-collapse" id="navbarSupportedContent">
-
-                <?php
-                /*$arg= array(
-                    'theme_location' => 'header_menu',
-                    'container' => 'ul',
-
-                    'menu_class' => '',
-                    'menu_id' => 'kervis'
-
-                );
-                wp_nav_menu($arg);
-                ?>
-                <div class="kervis-flex">
-                <?php get_search_form(); */?>
+    <nav>
+        <a  href="<?php echo esc_url(home_url('/'));?>" class="logo">
+            <img src="<?php echo get_template_directory_uri();?>/img/biodynamics.png" alt="logo">
+        </a>
+        <div class="icono" id="icono">
+            <span>&#9776;</span>
+        </div>
+            <div class="enlaces uno" id="enlaces">
+                <a href="<?php the_field('url-home');?>" class="ancla">home</a>
+                <a href="<?php the_field('url-divisiones');?>" class="ancla">diviciones</a>
+                <a href="<?php the_field('url-contactanos');?>" class="ancla">contactanos</a>
+                <div class="ancla">
+                <?php get_search_form();?>
                 </div>
+
             </div>
 
-        </div>
 
-    </nav>-->
-    <!--fin de nav-->
+    </nav>
 
-    <!--imagen destacada-->
-    <div class="texto">
-        <h1>kervis</h1>
-        <h2>suscribete</h2>
-    </div>
 
 </header>
+<div class="kervis-wrap">
 
 
 

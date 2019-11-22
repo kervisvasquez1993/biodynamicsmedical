@@ -903,6 +903,109 @@ html {
 .linea-biodynamics img {
     width: 150px !important;
 }
+/*menu de nav alex*/
+header{
+
+    width: 100%;
+    overflow: hidden;
+}
+header nav {
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.icono{
+    display: none;
+}
+.enlaces{
+    display: flex;
+    height: 100%;
+    width:  50%;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.enlaces .ancla {
+   border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    padding: 4px 0;
+    transition: 0.7s ease-out;
+    color: black;
+    text-decoration: none;
+
+
+}
+.enlaces .ancla:hover{
+
+    border-top: 2px solid ;
+    border-bottom: 2px solid;
+    }
+
+nav .logo{
+    height: 100%;
+    background: #ffffff;
+    margin-left: 10px;
+    width: 250px;
+}
+ nav .logo img {
+     width: 100%;
+
+     height: inherit;
+ }
+
+ @media screen and (max-width: 980px)
+ {
+    .icono{
+        display: flex;
+        justify-content: center;
+        height: 70px;
+        align-items: center;
+        color: #ffffff;
+        padding: 20px;
+        z-index: 10000;
+        cursor: pointer;
+        margin-right: 40px;
+
+            }
+     .kervis-wrap {
+         z-index: 0 !important;
+
+     }
+     .enlaces{
+         justify-content: space-around;
+         position: fixed;
+         right: 0 !important;
+         width: 100%;
+         height: 100vh;
+         flex-direction: column;
+         transition: all 1s ease;
+         z-index: 100;
+
+     }
+     .uno{
+
+         -webkit-clip-path: circle(0% at 100% 0%);
+         clip-path: circle(0% at 100% 0%);
+
+
+     }
+     .dos{
+
+         -webkit-clip-path: circle(150% at 100% 0%);
+         clip-path: circle(150% at 100% 0%);
+
+
+     }
+     header nav{
+         justify-content: space-between;
+             width: 100vw;
+     }
+
+
+ }
+
+/*fin de menu alex*/
 /* mejora del nav */
 .biodynamics-flex{
     display: flex;
@@ -935,15 +1038,14 @@ form.form-inline .btn{
     font-size: 0.65rem;
 
 }
-header{
-    display: flex;
-    justify-content: space-between;
-}
+
+
 
 .flex-dinamics{
     display: flex;
     justify-content: center;
 }
+
 @media screen and (max-width: 992px) {
     .kervis-nav{
         flex-direction: column;
@@ -976,10 +1078,11 @@ header{
         margin: 0px;
     }
 }
+
 /*fin de mejora del nav*/
 @media screen and (max-width: 468px) {
     .biodynamics-flex{
-        height: 30vh;;
+        height: 30vh;
     }
 }
 @media screen and (max-width: 992px){
