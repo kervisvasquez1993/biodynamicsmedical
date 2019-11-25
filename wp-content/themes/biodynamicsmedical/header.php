@@ -39,13 +39,14 @@
                 <div class="ancla">-->
                 <?php
 
-                wp_nav_menu(array(
+                $arg= array(
                     'theme_location' => 'header_menu',
-                    'container' => 'a',
-                    'container_class' => 'ancla oxygen title-nav',
-                    'container_id' => 'menu-auto'
+                    'container' => 'ul',
+                    'menu_class'=> 'kervis-nav',
+                    'menu_id' => 'kervis'
 
-                ));
+                );
+                wp_nav_menu($arg);
                 ?>
 
 
