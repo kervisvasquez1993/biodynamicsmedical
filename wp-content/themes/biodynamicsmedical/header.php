@@ -32,10 +32,23 @@
             <span class="black">&#9776;</span>
         </div>
             <div class="enlaces uno" id="enlaces">
-                <a href="<?php the_field('url-home');?>" class="ancla oxygen title-nav">home</a>
+
+                <!--<a href="<?php the_field('url-home');?>" class="ancla oxygen title-nav">home</a>
                 <a href="<?php the_field('url-divisiones');?>" class="ancla oxygen title-nav">diviciones</a>
                 <a href="<?php the_field('url-contactanos');?>" class="ancla oxygen title-nav">contactanos</a>
-                <div class="ancla">
+                <div class="ancla">-->
+                <?php
+
+                wp_nav_menu(array(
+                    'theme_location' => 'header_menu',
+                    'container' => 'a',
+                    'container_class' => 'ancla oxygen title-nav',
+                    'container_id' => 'menu-auto'
+
+                ));
+                ?>
+
+
                 <?php get_search_form();?>
                 </div>
 
