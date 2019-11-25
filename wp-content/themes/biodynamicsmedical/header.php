@@ -24,12 +24,12 @@
 </head>
 <body>
 <header>
-    <nav>
+    <nav id="menu-auto">
         <a  href="<?php echo esc_url(home_url('/'));?>" class="logo">
             <img src="<?php echo get_template_directory_uri();?>/img/biodynamics.png" alt="logo">
         </a>
         <div class="icono" id="icono">
-            <span>&#9776;</span>
+            <span class="black">&#9776;</span>
         </div>
             <div class="enlaces uno" id="enlaces">
                 <a href="<?php the_field('url-home');?>" class="ancla">home</a>

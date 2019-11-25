@@ -22,3 +22,30 @@ window.addEventListener('resize', function () {
 
     }
 })
+
+//menu pegajoso
+var stickymenu = document.getElementById("menu-auto")
+
+
+
+var stickymenuoffset = stickymenu.offsetTop
+
+
+window.addEventListener("scroll", function(e){
+    requestAnimationFrame(function(){
+        if (window.pageYOffset > stickymenuoffset){
+
+
+            stickymenu.classList.add('stickymenu')
+        }
+        else{
+
+            stickymenu.classList.remove('stickymenu')
+
+        }
+
+
+
+
+    })
+})

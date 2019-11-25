@@ -4,19 +4,21 @@
 </div>
 <?php while(have_posts()): the_post() ;?>
 <div class="card">
-    <div class="card">
-   <span> <a href="<?php the_field('url-home');?>">Home</a> /
-       <a href="<?php the_field('url-divisiones');?>">Divisiones</a> /
-       <a href="<?php the_field('url-trauma');?>">Trauma</a> /
-        <?php the_title(); ?>
-   </span>
-    </div>
+
+
+
     <div class="container">
+         <span class="ruta-interna abel">
+       <a class="black" href="<?php the_field('url-home');?>">Home</a> /
+       <a class="black" href="<?php the_field('url-divisiones');?>">Divisiones</a> /
+       <a class="black" href="<?php the_field('url-trauma');?>">Trauma</a> /
+        <a class="here" href="#"><?php the_title();?></a>
+   </span>
         <div class="row">
             <div class="carousel-row no-gutter">
                 <div class=" row slide-row">
                     <div class="col-md-6 col-lg-6">
-                        <div class="slide-content">
+                        <div class="slide-content NewsCycle">
                             <?php the_content();?>
                         </div>
                     </div>
@@ -59,7 +61,7 @@
                             </h4>
                         </div>
                         <div id="collapse0" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingO">
-                            <div class="panel-body">
+                            <div class="panel-body NewsCycle">
                                 <?php the_field('indicaciones')?>
                             </div>
                         </div>
@@ -74,7 +76,7 @@
                             </h4>
                         </div>
                         <div id="collapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingO">
-                            <div class="panel-body">
+                            <div class="panel-body NewsCycle">
                                 <?php the_field('beneficios_y_caracteristicas')?>
                             </div>
                         </div>
@@ -89,7 +91,7 @@
                             </h4>
                         </div>
                         <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingO">
-                            <div class="panel-body">
+                            <div class="panel-body NewsCycle">
                                 <?php the_field('caracteristicas_tecnicas')?>
                             </div>
                         </div>
@@ -104,8 +106,8 @@
                             </h4>
                         </div>
                         <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingO">
-                            <div class="panel-body">
-                                <a href="<?php the_field('archivo')?>"></a>
+                            <div class="panel-body NewsCycle">
+                                <a href="<?php the_field('archivo')?>"> Descarhgar archivo</a>
 
                             </div>
                         </div>

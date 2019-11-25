@@ -12,36 +12,16 @@
 
     </div>
     <div class="container">
-        <span> <a href="<?php the_field('url-home');?>">Home</a> /</span>
+
         <div class="row">
 
-            <div class="col-md-4 col-centered col-sm-12 col-lg-4">
-
-                <p>
-                    <?php the_content();?>
-                </p>
-
-
-
-
-                <!-- <div class="flex-dinamics">
-                    <div class="info-card center-block">
-                        <div class="front">
-                            <img src="<?php the_field('img-biodynamic');?>" alt=" img biodinamics">
-                        </div>
-                        <div class="back bio-text">
-                            <h4 class="h2"><?php the_field('linea_Dinamics');?></h4>
-                              <p><?php the_field('dinamics_descripcion');?>
-                                <a href="<?php the_field('url_biodynamicsmedical');?>"><?php the_field('leer_mas');?></a>
-                            </p>
-                        </div>
-                    </div>
-                </div> -->
+            <div class="col-md-4 col-centered col-sm-12 col-lg-4 NewsCycle">
+                <?php the_content();?>
             </div>
 
             <div class="col-md-8 col-centered col-sm-12 col-lg-8">
                 <div class="page-header text-center">
-                    <h3 class="linea-biodynamics"><?php the_field('lineaProductos');?> </h3>
+                    <h3 class="linea-biodynamics oxygen"><?php the_field('lineaProductos');?> </h3>
 
                 </div>
                 <div class="row row-centered">
@@ -51,11 +31,11 @@
                             <img class="img-responsive" src="<?php the_field('img-card-trauma');?>" alt="">
                             <div class="overlay text-center">
                                 <h2>
-                                    <a href="<?php the_field('url-trauma');?>">
+                                    <a href="<?php the_field('url-trauma');?>" class="oxygen">
                                         Trauma
                                     </a>
                                 </h2>
-                                <a class="info" href="<?php the_field('url-trauma');?>">
+                                <a class="info oxygen" href="<?php the_field('url-trauma');?>" >
                                     click here
                                 </a>
                             </div>
@@ -69,11 +49,11 @@
                                 <img class="img-responsive" src="<?php the_field('img-card-columna');?>" alt="">
                                 <div class="overlay text-center">
                                     <h2>
-                                        <a href="<?php the_field('url-columna')?>">
+                                        <a href="<?php the_field('url-columna')?>" class="oxygen">
                                             COLUMNA
                                         </a>
                                     </h2>
-                                    <a class="info" href="<?php the_field('url-columna')?>">
+                                    <a class="info oxygen" href="<?php the_field('url-columna')?>">
                                         click here
                                     </a>
                                 </div>
@@ -86,11 +66,11 @@
                             <img class="img-responsive" src="<?php the_field('img-card-maxilof');?>" alt="">
                             <div class="overlay text-center">
                                 <h2>
-                                    <a href="<?php the_field('url-maxilofacial ')?>">
+                                    <a href="<?php the_field('url-maxilofacial ')?>" class="oxygen">
                                         MAXILOFACIAL
                                     </a>
                                 </h2>
-                                <a class="info" href="<?php the_field('url-maxilofacial')?>">
+                                <a class="info oxygen" href="<?php the_field('url-maxilofacial')?>" >
                                     click here
                                 </a>
                             </div>
@@ -103,11 +83,11 @@
                                 <img class="img-responsive" src="<?php the_field('img-card-otros-productos');?>" alt="">
                                 <div class="overlay text-center">
                                     <h2>
-                                        <a href="<?php the_field('url-otros-productos')?>">
+                                        <a href="<?php the_field('url-otros-productos')?>" class="oxygen">
                                             OTROS PRODUCTOS
                                         </a>
                                     </h2>
-                                    <a class="info" href="<?php the_field('url-otros-productos')?>">
+                                    <a class="info oxygen" href="<?php the_field('url-otros-productos')?>" class="oxygen">
                                         click here
                                     </a>
                                 </div>

@@ -12,9 +12,9 @@ get_header();?>
 
 
 <div class="container">
-     <span> <a href="<?php the_field('url-home');?>">Home</a> /
-       <a href="<?php the_field('url-divisiones');?>">Divisiones</a> /
-       <a href="<?php the_field('url-columna');?>">Columna</a></span>
+     <span class="ruta-interna abel"> <a href="<?php the_field('url-home');?>" class="black">Home</a> /
+       <a href="<?php the_field('url-divisiones');?>" class="black">Divisiones</a> /
+       <a href="<?php the_field('url-columna');?>" class="here">Columna</a></span>
 
     <div class="row">
         <?php $arg= array(

@@ -12,8 +12,9 @@
 
 <div class="container">
 
-    <span> <a href="<?php the_field('url-home');?>">Home</a> /
-        <a href="<?php the_field('url-divisiones');?>">Divisiones</a>
+    <span class="ruta-interna abel">
+        <a href="<?php the_field('url-home');?>" class="black">Home</a> /
+        <a href="<?php the_field('url-divisiones');?>" class="here">Divisiones</a>
     </span>
 
 
@@ -41,11 +42,11 @@
                             <img class="img-responsive" src="<?php the_post_thumbnail_url('small');?>" alt="">
                             <div class="overlay text-center">
                                 <h2>
-                                    <a href="<?php the_field('enlaces_division')?>">
+                                    <a href="<?php the_field('enlaces_division')?>" class="oxygen">
                                         <?php the_title();?>
                                     </a>
                                 </h2>
-                                <a class="info" href="<?php the_field('enlaces_division')?>">
+                                <a class="info oxygen" href="<?php the_field('enlaces_division')?>">
                                     click here
                                 </a>
                             </div>

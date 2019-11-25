@@ -26,21 +26,53 @@ Use it to make something cool, have fun, and share what you've learned with othe
 @font-face {
     font-family: 'Oxygen';
 }
-.oxygen{
-    font-family: 'Oxygen';
+
+
+
+.oxygen,
+.oxygen >* {
+    font-family: 'Oxygen' !important;
+    color: green !important;
 }
 @font-face {
     font-family: 'abel';
 }
-.abel{
-    font-family: 'abel';
+.abel,
+.abel > *{
+    font-family: 'abel' !important;
+
 }
 @font-face {
     font-family: 'News Cycle';
 }
-.NewsCycle{
-    font-family: 'News Cycle';
+.NewsCycle h4,
+.NewsCycle h1,
+.NewsCycle h2,
+.NewsCycle h3,
+.NewsCycle h6,
+.NewsCycle h5{
+    font-weight: bold;
 }
+.NewsCycle,
+.NewsCycle > *{
+    font-family: 'News Cycle' !important;
+}
+.ruta-interna{
+    line-height: 300%;
+    font-size: 18px;
+    font-weight: bold;
+    color: black !important;
+
+
+}
+.ruta-interna .here{
+    color: red;
+    font-size: 25px;
+    white-space: normal;
+
+
+}
+/*font fin*/
 
 
 /* fin de la seccion de fuentes*/
@@ -892,18 +924,29 @@ html {
     width: 100%;
     height: 100%;
 }
-
+.black{
+    color: black;
+}
 .linea-biodynamics{
     display: flex;
-
     align-items: center;
     justify-content: space-evenly;
+    color: black !important;
 
 }
 .linea-biodynamics img {
     width: 150px !important;
 }
+
+
 /*menu de nav alex*/
+.stickymenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background: white;
+}
 header{
 
     width: 100%;
@@ -1148,9 +1191,7 @@ form.form-inline .btn{
     }
 
 }
-p{
-    color: blue !important;
-}
+
 
 /*
 menus style

@@ -14,10 +14,10 @@ get_header();?>
 
 <div class="container">
 
-<span>
-       <a href="<?php the_field('url-home');?>">Home</a> /
-       <a href="<?php the_field('url-divisiones');?>">Divisiones</a> /
-       <a href="<?php the_field('url-trauma');?>">Trauma</a> /
+<span class="ruta-interna abel">
+       <a href="<?php the_field('url-home');?>" class="black">Home</a> /
+       <a href="<?php the_field('url-divisiones');?>" class="black">Divisiones</a> /
+       <a href="<?php the_field('url-trauma');?>" class="here">Trauma</a> /
    </span>
     <div class="flex-row row">
         <?php $arg= array(
@@ -30,8 +30,8 @@ get_header();?>
             <div class="col-xs-6 col-sm-4 col-lg-4">
                 <div class="thumbnail ">
                     <img src="<?php the_field('imagen_principal_producto');?>" alt="...">
-                    <div class="caption product-description">
-                        <h4><?php the_title();?></h4>
+                    <div class="caption product-description NewsCycle">
+                        <h4 class="abel"><?php the_title();?></h4>
                         <p class="intro">
 
                             <?php the_excerpt();?>

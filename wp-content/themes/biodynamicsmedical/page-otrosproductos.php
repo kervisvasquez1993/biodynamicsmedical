@@ -11,9 +11,10 @@ get_header();?>
 
 
 <div class="container">
-    <span> <a href="<?php the_field('url-home');?>">Home</a> /
-       <a href="<?php the_field('url-divisiones');?>">Divisiones</a> /
-       <a href="<?php the_field('url-otros-productos');?>">Otros Productos</a></span>
+    <span class="ruta-interna abel">
+       <a href="<?php the_field('url-home');?>" class="black">Home</a> /
+       <a href="<?php the_field('url-divisiones');?>" class="black">Divisiones</a> /
+       <a href="<?php the_field('url-otros-productos');?>" class="here">Otros Productos</a></span>
     <div class="row">
         <?php $arg= array(
             'post_type' => 'otros_productos',

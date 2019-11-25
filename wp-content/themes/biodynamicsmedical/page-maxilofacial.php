@@ -11,9 +11,10 @@ get_header();?>
 
 
 <div class="container">
-       <span> <a href="<?php the_field('url-home');?>">Home</a> /
-       <a href="<?php the_field('url-divisiones');?>">Divisiones</a> /
-       <a href="<?php the_field('url-maxilofacial');?>">Maxilofacial</a></span>
+       <span class="ruta-interna abel">
+           <a href="<?php the_field('url-home');?>" class="black">Home</a> /
+           <a href="<?php the_field('url-divisiones');?>" class="black">Divisiones</a> /
+           <a href="<?php the_field('url-maxilofacial');?>" class="here">Maxilofacial</a></span>
 
     <div class="row">
         <?php $arg= array(
