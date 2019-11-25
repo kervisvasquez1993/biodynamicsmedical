@@ -32,9 +32,9 @@
             <span class="black">&#9776;</span>
         </div>
             <div class="enlaces uno" id="enlaces">
-                <a href="<?php the_field('url-home');?>" class="ancla">home</a>
-                <a href="<?php the_field('url-divisiones');?>" class="ancla">diviciones</a>
-                <a href="<?php the_field('url-contactanos');?>" class="ancla">contactanos</a>
+                <a href="<?php the_field('url-home');?>" class="ancla oxygen title-nav">home</a>
+                <a href="<?php the_field('url-divisiones');?>" class="ancla oxygen title-nav">diviciones</a>
+                <a href="<?php the_field('url-contactanos');?>" class="ancla oxygen title-nav">contactanos</a>
                 <div class="ancla">
                 <?php get_search_form();?>
                 </div>

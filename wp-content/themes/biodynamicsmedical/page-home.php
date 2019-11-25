@@ -11,11 +11,12 @@
 
 
     </div>
+    <br><br><br>
     <div class="container">
 
         <div class="row">
 
-            <div class="col-md-4 col-centered col-sm-12 col-lg-4 NewsCycle">
+            <div class="col-md-4 col-centered col-sm-12 col-lg-4 NewsCycle paddin-top">
                 <?php the_content();?>
             </div>
 
