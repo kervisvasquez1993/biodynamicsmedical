@@ -7,13 +7,13 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="Interwebsite">
     <!--link para imagen en apple-->
-    <!--<link rel="apple-touch-icon" href="<?php // echo get_template_directory_uri();?>/img/interwebsite.jpg"> -->
+    <link rel="apple-touch-icon" href="<?php  echo get_template_directory_uri();?>/img/icono.png">
    <!--fin-->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="theme-color" content="#003663">
     <meta name="application-name" content="Interwebsite">
     <!--link para imagen en el head-->
-    <!--<link rel="icon" type="image/png" href="<?php // echo get_template_directory_uri();?>/img/interwebsite.jpg" sizes="200x200"> -->
+    <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri();?>/img/icono.png" sizes="200x200">
 
     <title><?php bloginfo('title');?></title>
 
@@ -31,7 +31,7 @@
         <div class="icono" id="icono">
             <span class="black">&#9776;</span>
         </div>
-            <div class="enlaces uno" id="enlaces">
+            <div class="enlaces color-fondo uno" id="enlaces">
 
                 <!--<a href="<?php the_field('url-home');?>" class="ancla oxygen title-nav">home</a>
                 <a href="<?php the_field('url-divisiones');?>" class="ancla oxygen title-nav">diviciones</a>
@@ -42,8 +42,9 @@
                 $arg= array(
                     'theme_location' => 'header_menu',
                     'container' => 'ul',
-                    'menu_class'=> 'kervis-nav',
-                    'menu_id' => 'kervis'
+                    'menu_class'=> 'oxygen title-nav oxygen flex-ul color-fondo',
+                    'menu_id' => 'kervis',
+
 
                 );
                 wp_nav_menu($arg);

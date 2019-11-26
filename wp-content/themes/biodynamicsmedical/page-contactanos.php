@@ -9,6 +9,7 @@
 </div>
 
 <?php while(have_posts()): the_post();?>
+    <br>
 <div class="container">
 
     <div class="row row-centered">

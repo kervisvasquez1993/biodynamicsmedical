@@ -30,12 +30,13 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 .title-nav{
     font-weight: bold;
-    font-size: 16px;
+    font-size: 14px;
     text-transform: uppercase;
 }
 .oxygen,
 .oxygen >* {
     font-family: 'Oxygen' !important;
+
 
 }
 @font-face {
@@ -937,6 +938,12 @@ html {
 .black{
     color: black;
 }
+a:hover{
+    color: red;
+}
+.current-menu-item{
+    border-bottom: solid red 2px;
+}
 .linea-biodynamics{
     display: flex;
     align-items: center;
@@ -974,14 +981,13 @@ header nav {
 .enlaces{
     display: flex;
     height: 100%;
-    width:  50%;
+    width:  70%;
     justify-content: space-around;
     align-items: center;
 
 }
-.enlaces .ancla {
-   border-top: 1px solid transparent;
-    border-bottom: 1px solid transparent;
+.enlaces .flex-ul .menu-item {
+
     padding: 4px 0;
     transition: 0.7s ease-out;
     color: black;
@@ -989,8 +995,11 @@ header nav {
 
 
 }
-.enlaces .ancla:hover{
-
+a{
+    color: black;
+}
+.enlaces .menu-item:hover{
+    color: #FF3B30;
     border-top: 2px solid ;
     border-bottom: 2px solid;
     }
@@ -1007,8 +1016,33 @@ nav .logo{
      height: inherit;
  }
 
+.flex-ul{
+    display: flex;
+    justify-content: space-between;
+   padding-top: 15px;
+    align-items: center;
+    width: 33vw;
+}
+.flex-ul li {
+    text-decoration: none;
+    list-style: none;
+
+}
  @media screen and (max-width: 980px)
  {
+     .form-inline{
+         display: inline;
+     }
+    .flex-ul li a {
+        color: white;
+    }
+    .flex-ul{
+
+        display: flex;
+        flex-direction: column;
+        height: 60vh;
+        text-align: center;
+    }
     .icono{
         display: flex;
         justify-content: center;
@@ -1023,9 +1057,18 @@ nav .logo{
             }
      .kervis-wrap {
          z-index: 0 !important;
+         min-height: 100vh;
+
+     }
+     .color-fondo{
 
      }
      .enlaces{
+         background: rgb(0,0,0);
+         background: -moz-radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(180,0,37,1) 100%);
+         background: -webkit-radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(180,0,37,1) 100%);
+         background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(180,0,37,1) 100%);
+         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#b40025",GradientType=1);
          justify-content: space-around;
          position: fixed;
          right: 0 !important;
@@ -1034,6 +1077,7 @@ nav .logo{
          flex-direction: column;
          transition: all 1s ease;
          z-index: 100;
+
 
      }
      .uno{
@@ -1156,7 +1200,7 @@ form.form-inline .btn{
     align-items: center;
     justify-content: space-evenly;
     width: 100vw;
-    min-height: 100vh;
+height: 100vh;
 
 
 
@@ -1164,17 +1208,14 @@ form.form-inline .btn{
 .contenedor-error div.error-child {
 
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    height: 40vh;
+    height: 100vh;
 
 }
 .contenedor-error .error-kervis{
     font-size: 15rem !important;
-
-
-
 }
 .contenedor-error div.error-child-2{
     text-align: center;
@@ -1199,10 +1240,55 @@ form.form-inline .btn{
         margin: 0 20px ;
 
     }
+    .gracias-in{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .parrafo-gracias,
+    .gracias-body-h2,
+    .gracias-body-p{
+        text-align: center;
+    }
+
 
 }
 
+/*style gracias*/
+.gracias-body-h2{
+    font-size: 3rem;
+    font-weight: 1000;
+}
+.cuerpo-gracias{
+    width: 100vw;
+    min-height: 50vh;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.gracias-in{
+    display: flex;
+
+    align-items: center;
+}
+.img-gracias{
+    width: 300px;
+}
+.gracias-body-p-2{
+    font-style: oblique;
+    font-size: 15px;
+}
+.parrafo-gracias{
+    font-weight: bold;
+    font-style: oblique;
+}
+
+
+/*fin */
 /*
 menus style
  */

@@ -8,7 +8,7 @@ boton.addEventListener('click', function(){
     }
     else{
         enlaces.classList.remove('dos')
-        enlaces.className = ('enlaces uno')
+        enlaces.className = ('enlaces  uno')
         contador = 0
     }
 })

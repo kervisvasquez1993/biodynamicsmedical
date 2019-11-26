@@ -35,7 +35,7 @@ get_header();?>
                                 </p>
                                 <hr>
                                 <a class="link-detail" href="<?php the_permalink();?>">
-                                    <?php the_field('leermas');?>
+                                    Leer Más
                                 </a>
                             </div>
                         </div>

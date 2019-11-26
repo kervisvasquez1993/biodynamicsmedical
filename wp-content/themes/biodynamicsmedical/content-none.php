@@ -20,9 +20,6 @@
                     <h2 class="error-kervis">404</h2>
                     <h3 class="error-content">PAGINA NO ENCONTRADA</h3>
                 </div>
-                <div class="error-child-2">
-                    <p class="404-parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto blanditiis explicabo libero minus molestiae sunt ut.</p>
-                </div>
 
             </div>
         </a>
