@@ -12,8 +12,9 @@
        <a class="black" href="<?php the_field('url-home');?>">Home</a> /
        <a class="black" href="<?php the_field('url-divisiones');?>">Divisiones</a> /
        <a class="black" href="<?php the_field('url-columna');?>">Columna</a> /
-        <a class="here" href="#"><?php the_title();?></a>
+        <a class="black here2" href="#"><?php the_title();?></a>
    </span>
+        <h1 class=""><?php the_title();?></h1>
         <div class="row">
             <div class="carousel-row no-gutter">
                 <div class=" row slide-row">

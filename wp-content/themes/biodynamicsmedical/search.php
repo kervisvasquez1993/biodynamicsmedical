@@ -6,8 +6,10 @@
  */
 get_header(); ?>
 
+    <div class="item active responsive">
+     <img class="img-responsive" src="<?php echo get_template_directory_uri();?>/img/"?>" class="img-fluid" alt="Responsive image">
 
-
+    </div>
 <?php if ( have_posts() ) : ?>
     <?php
     /* translators: %s: search term

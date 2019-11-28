@@ -76,6 +76,9 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 
 }
+.here2{
+    color: red !important;
+}
 .ruta-interna .here{
     color: red;
     font-size: 25px;
@@ -1064,11 +1067,11 @@ nav .logo{
 
      }
      .enlaces{
-         background: rgb(0,0,0);
-         background: -moz-radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(180,0,37,1) 100%);
-         background: -webkit-radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(180,0,37,1) 100%);
-         background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(180,0,37,1) 100%);
-         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#b40025",GradientType=1);
+         background: rgb(172,167,167);
+         background: -moz-radial-gradient(circle, rgba(172,167,167,1) 9%, rgba(33,29,30,1) 100%);
+         background: -webkit-radial-gradient(circle, rgba(172,167,167,1) 9%, rgba(33,29,30,1) 100%);
+         background: radial-gradient(circle, rgba(172,167,167,1) 9%, rgba(33,29,30,1) 100%);
+         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#aca7a7",endColorstr="#211d1e",GradientType=1);
          justify-content: space-around;
          position: fixed;
          right: 0 !important;
@@ -1258,7 +1261,7 @@ height: 100vh;
 /*style gracias*/
 .gracias-body-h2{
     font-size: 3rem;
-    font-weight: 1000;
+    font-weight: 500;
 }
 .cuerpo-gracias{
     width: 100vw;
@@ -1292,3 +1295,7 @@ height: 100vh;
 /*
 menus style
  */
+
+.small{
+    font-size: 0.9rem;
+    }

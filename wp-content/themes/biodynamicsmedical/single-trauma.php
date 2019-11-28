@@ -12,11 +12,13 @@
        <a class="black" href="<?php the_field('url-home');?>">Home</a> /
        <a class="black" href="<?php the_field('url-divisiones');?>">Divisiones</a> /
        <a class="black" href="<?php the_field('url-trauma');?>">Trauma</a> /
-        <a class="here" href="#"><?php the_title();?></a>
+        <a class="black here2" href="#"><?php the_title();?></a>
    </span>
+        <h1 class=""><?php the_title();?></h1>
         <div class="row">
             <div class="carousel-row no-gutter">
                 <div class=" row slide-row">
+
                     <div class="col-md-6 col-lg-6">
                         <div class="slide-content NewsCycle">
                             <?php the_content();?>
