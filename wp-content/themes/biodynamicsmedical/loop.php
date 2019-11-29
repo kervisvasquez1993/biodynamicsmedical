@@ -25,6 +25,7 @@ endwhile;
     <div class="col-xs-6 col-sm-4 col-lg-4">
                  <div class="thumbnail ">
                     <img src="<?php the_field('imagen_busqueda');?>" alt="">
+
                 </div>
             <div class="caption product-description">
                     <?php

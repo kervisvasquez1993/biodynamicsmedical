@@ -46,6 +46,7 @@ if(!function_exists( style )) {
         wp_enqueue_script('jquery');
         wp_enqueue_script('popper','https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js', array('jquery'),'4.2.3',true);
         wp_enqueue_script('bootstrap-js','https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js', array('popper'),'4.2.3', true);
+        wp_enqueue_script('vue','https://cdn.jsdelivr.net/npm/vue/dist/vue.js', array(),'2', true);
         wp_enqueue_script('scripts', get_template_directory_uri().'/js/scripts.js',array(),'1.0.0', true);
 
     }
@@ -57,7 +58,8 @@ if(!function_exists( style )) {
 if(!function_exists(menus)){
     function menus(){
         register_nav_menus( array(
-            'header_menu' => __('header_menu', 'biodynamicsmedical')
+            'header_menu' => __('header_menu', 'biodynamicsmedical'),
+            'trauma_menu' => __('trauma_menu', 'biodynamicsmedical')
 
         ));
     }
@@ -88,8 +90,8 @@ add_filter( 'excerpt_length','extracto_longitud',999 );
 // fin de longitud de extracto
 
 // invocacion de widget
-if(!function_exists(interwebsite_widget)){
-    function interwebsite_widget(){
+if(!function_exists(biodynamics_widget)){
+    function biodynamics_widget(){
         register_sidebar(
             array(
                 'name' => 'form_widget',
@@ -103,7 +105,7 @@ if(!function_exists(interwebsite_widget)){
     }
 
 // fin de widget
-add_action('widgets_init','interwebsite_widget');
+add_action('widgets_init','biodynamics_widget');
 }
 /*filtro de busqueda
 function my_custom_searchengine($query) {

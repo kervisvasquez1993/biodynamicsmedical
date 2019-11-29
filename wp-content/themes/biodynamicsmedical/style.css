@@ -1299,3 +1299,13 @@ menus style
 .small{
     font-size: 0.9rem;
     }
+
+.ancho{
+    background: red;
+    width: 100vh;
+    height: 30px;
+}
+.categoria{
+    cursor: pointer;
+    padding: 0 10px;
+}
