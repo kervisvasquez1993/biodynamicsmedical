@@ -79,7 +79,9 @@ Use it to make something cool, have fun, and share what you've learned with othe
 .here2{
     color: red !important;
 }
-.ruta-interna .here{
+.ruta-interna .here,
+.center-titulo h3
+{
     color: red;
     font-size: 25px;
     white-space: normal;
@@ -1211,7 +1213,7 @@ height: 100vh;
 .contenedor-error div.error-child {
 
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     height: 100vh;
@@ -1230,7 +1232,11 @@ height: 100vh;
 @media screen and (max-width: 768px) {
     .contenedor-error div.error-child{
 
-        margin-top: 100px;
+       color: blue;
+        min-height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
     .contenedor-error .error-kervis{
         font-size: 8rem !important;
@@ -1308,4 +1314,22 @@ menus style
 .categoria{
     cursor: pointer;
     padding: 0 10px;
+    margin: 10px;
+    font-weight: bold
+}
+.center-titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.center-titulo h3 {
+    padding: 10px;
+    font-size: 3rem;
+}
+.container{
+    padding-top: 30px;
+}
+.p-small >* {
+    color: #FF3B30 !important;
+    font-size: 14px;
 }

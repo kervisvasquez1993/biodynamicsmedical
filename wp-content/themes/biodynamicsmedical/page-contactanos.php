@@ -46,7 +46,7 @@
         </div>
         <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 NewsCycle">
             <h3 class="here oxygen">Biodynamics C.A.</h3>
-            <?php the_content();?>
+            <div class="p-small"><?php the_content();?></div>
         </div>
     </div>
 </div>

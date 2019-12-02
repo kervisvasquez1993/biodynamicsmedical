@@ -14,7 +14,7 @@
             <div class="contenedor-error" style="
                 background: url(<?php echo get_template_directory_uri()?>/img/404.png);
                     background-repeat: no-repeat;
-                    background-position: center center;
+                    background-position: top right;
                     background-size: contain;">
                 <div class="error-child">
                     <h2 class="error-kervis">404</h2>

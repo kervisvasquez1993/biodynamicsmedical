@@ -19,14 +19,16 @@ get_header();?>
        <a href="<?php the_field('url-divisiones');?>" class="black">Divisiones</a> /
        <a href="<?php the_field('url-trauma');?>" class="here">Trauma</a> /
 </span>
-    <div class="ancho"></div>
+
     <div>
-    <span v-on:click="showCategoriaTotal" class="categoria">Todas las categorias</span>
-    <span v-on:click="showCategoria1" class="categoria">categoria1</span>
-    <span v-on:click="showCategoria2" class="categoria">categoria2</span>
-    <span v-on:click="showCategoria3" class="categoria">categoria3</span>
+    <span v-on:click="showCategoriaTotal" class="categoria black">Todas las categorias</span>
+    <span v-on:click="showCategoria1" class="categoria black">Sistema DHS/DCS-II</span>
+    <span v-on:click="showCategoria2" class="categoria black">Sistema de Tornillo</span>
+    <span v-on:click="showCategoria3" class="categoria black">Sistema BioNail AR</span>
+    <span v-on:click="showCategoria4" class="categoria black">Sistema Biolock</span>
+    <span v-on:click="showCategoria5" class="categoria black">Sistema MIS</span>
     </div>
-    <div >{{title}}</div>
+    <div class="center-titulo here" ><h3>{{title}}</h3></div>
     <div class="flex-row row">
 
         <?php $arg= array(
@@ -37,7 +39,7 @@ get_header();?>
         $trauma= new WP_Query($arg);
         while($trauma->have_posts()): $trauma->the_post();?>
 
-            <div class="col-xs-6 col-sm-4 col-lg-4" v-show="<?php the_field('test1');?>">
+            <div class="col-xs-6 col-sm-4 col-lg-4" v-show="<?php the_field('render-trauma');?>">
                 <div class="thumbnail ">
                     <img src="<?php the_field('imagen_principal_producto');?>" alt="...">
                     <div class="caption product-description NewsCycle">
