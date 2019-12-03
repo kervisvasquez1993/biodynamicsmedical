@@ -1064,6 +1064,7 @@ nav .logo{
          z-index: 0 !important;
          min-height: 100vh;
 
+
      }
      .color-fondo{
 
@@ -1332,4 +1333,40 @@ menus style
 .p-small >* {
     color: #FF3B30 !important;
     font-size: 14px;
+}
+
+.img-footer{
+    width: 100px;
+    display: flex;
+}
+.flex{
+    text-align: center;
+}
+.flex h2   {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.footer{
+
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    background: #f0f5f7;
+
+
+}
+body{
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+.kervis-wrap{
+
+    display: flex;
+    flex-direction: column;
+
 }
