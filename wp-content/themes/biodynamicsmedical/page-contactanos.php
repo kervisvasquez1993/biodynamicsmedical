@@ -12,10 +12,10 @@
     <br>
 <div class="container">
 
-    <div class="row row-centered">
+    <div class="row row-centered d-flex align-items-center">
         <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
            <h2 class="oxygen"><?php the_title();?></h2>
-            <form  class="" method="POST">
+       <form  class="" method="POST">
         <div class="form-group col-lg-12 col-centered col-xs-12">
             <label for="nombre" class="label abel"><?php the_field('nombre');?></label>
             <input type="text" name="nombrecompleto" id="nombre" class="validate form-control" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
@@ -42,10 +42,11 @@
             <input type="submit" name="contactanos" class="btn btn-primary" value="Enviar">
             <input type="hidden" name="oculto"  value="1">
         </div>
-    </form>
+      </form>
         </div>
+
         <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 NewsCycle">
-            <h3 class="here oxygen">Biodynamics C.A.</h3>
+
             <div class="p-small"><?php the_content();?></div>
         </div>
     </div>

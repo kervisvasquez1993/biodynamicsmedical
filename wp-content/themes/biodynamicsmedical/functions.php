@@ -35,6 +35,7 @@ if(!function_exists( style )) {
     function style(){
         wp_enqueue_style('raleweay','https://fonts.googleapis.com/css?family=Raleway&display=swap',array(), '1.0.0'.'all');
         wp_enqueue_style('Oxygen','https://fonts.googleapis.com/css?family=Oxygen&display=swap',array(),'1.0.0','all');
+        wp_enqueue_style('quicksand','https://fonts.googleapis.com/css?family=Quicksand&display=swap',array(),'1.0.0','all');
         wp_enqueue_style('abel','https://fonts.googleapis.com/css?family=Abel&display=swap', array(),'1.0.0','all');
         wp_enqueue_style('News Cycle','https://fonts.googleapis.com/css?family=News+Cycle&display=swap',array(),'1.0.0','all');
         wp_enqueue_style('normalize','https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css', array(),'8.0.1','all');
@@ -72,6 +73,13 @@ if(!function_exists(menus)){
 add_action('init','biodynamics_menu');
 
 
+function change_posts_order( $query ) {
+if ( $query-is_home() && $query-is_main_query() ) {
+$query-set( 'orderby', 'title' );
+$query-set( 'order', 'ASC' );
+}
+}
+add_action( 'pre_get_posts', ' change_posts_order ' );
 
 if(!function_exists(biodynamicsmedical_setup)){
     function biodynamicsmedical_setup(){

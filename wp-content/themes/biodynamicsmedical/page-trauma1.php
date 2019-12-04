@@ -20,15 +20,15 @@ get_header();?>
        <a href="<?php the_field('url-trauma');?>" class="here">Trauma</a> /
 </span>
 
-    <div>
-    <span v-on:click="showCategoriaTotal" class="categoria black">Todas las categorias</span>
-    <span v-on:click="showCategoria1" class="categoria black">Sistema DHS/DCS-II</span>
-    <span v-on:click="showCategoria2" class="categoria black">Sistema de Tornillo</span>
-    <span v-on:click="showCategoria3" class="categoria black">Sistema BioNail AR</span>
-    <span v-on:click="showCategoria4" class="categoria black">Sistema Biolock</span>
-    <span v-on:click="showCategoria5" class="categoria black">Sistema MIS</span>
+    <div class="categoria-padre">
+    <span v-on:click="showCategoriaTotal" class="categoria oxygen  btn btn-outline-secondary ">Todas las categorias</span>
+    <span v-on:click="showCategoria1" class="categoria  oxygen btn btn-outline-secondary ">Sistema DHS/DCS-II</span>
+    <span v-on:click="showCategoria2" class="categoria  oxygen btn btn-outline-secondary ">Sistema de Tornillo</span>
+    <span v-on:click="showCategoria3" class="categoria oxygen  btn btn-outline-secondary ">Sistema BioNail AR</span>
+    <span v-on:click="showCategoria4" class="categoria  oxygen btn btn-outline-secondary ">Sistema Biolock</span>
+    <span v-on:click="showCategoria5" class="categoria  oxygen btn btn-outline-secondary ">Sistema MIS</span>
     </div>
-    <div class="center-titulo here" ><h3>{{title}}</h3></div>
+    <div class="center-titulo quincksand " ><h3>{{title}}</h3></div>
     <div class="flex-row row">
 
         <?php $arg= array(

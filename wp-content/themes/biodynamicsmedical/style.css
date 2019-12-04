@@ -19,12 +19,23 @@ Use it to make something cool, have fun, and share what you've learned with othe
         font-family: 'raleweay';
     }
 
+.hover:hover{
+    background: #eff5fa !important;
+    color: black;
+}
 .releweay{
     font-family: 'releweay';
 }
 
 @font-face {
     font-family: 'Oxygen';
+}
+
+.quincksand{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    color: #0000 !important;
+    font-size: 18px !important;
 }
 
 
@@ -43,7 +54,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
     font-family: 'abel';
 }
 .color-red{
-    color: red;
+    color: #fd0216;
 }
 .paddin-top{
     padding-top: 45px;
@@ -77,16 +88,20 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 }
 .here2{
-    color: red !important;
+    color: #fd0216 !important;
 }
 .ruta-interna .here,
 .center-titulo h3
 {
-    color: red;
+    color: #fd0216;
     font-size: 25px;
     white-space: normal;
 
 
+}
+.center-titulo h3{
+    color: black;
+    font-weight: bold;
 }
 /*font fin*/
 
@@ -177,7 +192,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
     padding:20px
 }
 .panel-default>.panel-heading {
-    color:red;
+
     background-color:transparent;
     border-color:transparent
 }
@@ -810,8 +825,8 @@ html {
 }
 .btn-red {
     color: #fff;
-    background-color: #ff6160;
-    border-color: #ff6160;
+    background-color: #fd0216;
+    border-color: #fd0216;
 }
 .btn-red:hover {
     color: #fff;
@@ -944,10 +959,10 @@ html {
     color: black;
 }
 a:hover{
-    color: red;
+    color: #fd0216;
 }
 .current-menu-item{
-    border-bottom: solid red 2px;
+    border-bottom: solid #fd0216 2px;
 }
 .linea-biodynamics{
     display: flex;
@@ -1192,8 +1207,7 @@ form.form-inline .btn{
 
     .barra-menu{
         display: flex;
-        background: red;
-
+        background: #fd0216;
     }
 
 
@@ -1308,7 +1322,7 @@ menus style
     }
 
 .ancho{
-    background: red;
+    background: #fd0216;
     width: 100vh;
     height: 30px;
 }
@@ -1331,12 +1345,12 @@ menus style
     padding-top: 30px;
 }
 .p-small >* {
-    color: #FF3B30 !important;
+
     font-size: 14px;
 }
 
 .img-footer{
-    width: 100px;
+    width: 100px !important;
     display: flex;
 }
 .flex{
@@ -1353,7 +1367,10 @@ menus style
     bottom: 0;
     left: 0;
     width: 100vw;
-    background: #f0f5f7;
+    background: #f0f5f7;  
+    margin-top: 40px;
+    
+    
 
 
 }
@@ -1369,4 +1386,24 @@ body{
     display: flex;
     flex-direction: column;
 
+}
+
+.footer-copy{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+@media (max-width: 480px){
+    .footer-copy {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.categoria-padre{
+     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }

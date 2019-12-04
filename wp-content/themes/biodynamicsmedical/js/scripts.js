@@ -2,6 +2,8 @@ var boton = document.getElementById('icono')
 var enlaces = document.getElementById('enlaces')
 var contador = 0
 var render = document.getElementById('render')
+var single = document.getElementById('single')
+
 boton.addEventListener('click', function(){
     if (contador == 0){
         enlaces.className = ('enlaces dos');
@@ -23,6 +25,83 @@ window.addEventListener('resize', function () {
 
     }
 })
+/*toggle icon inicio*/
+    if (single) 
+{   var icono_footer = document.getElementById('menos'),
+        icono_footer2 = document.getElementById('menos2'),
+        icono_footer3 = document.getElementById('menos3'),
+        icono_footer4 = document.getElementById('menos4'),
+        click_toggle = document.getElementById('click_toggle'),
+        click_toggle2 = document.getElementById('click_toggle2'),
+        click_toggle3 = document.getElementById('click_toggle3'),
+        click_toggle4 = document.getElementById('click_toggle4'),
+        contador_toggle = 0,
+        contador_toggle2 = 0,
+        contador_toggle3 = 0,
+        contador_toggle4= 0
+    
+     click_toggle.addEventListener('click', function(){
+
+        if(contador_toggle == 0){
+            icono_footer.classList.remove('fa-plus')
+            icono_footer.classList.add('fa-minus')
+             contador_toggle = 1
+        }
+        else{
+              icono_footer.classList.remove('fa-minus')
+              icono_footer.classList.add('fa-plus')
+              contador_toggle = 0
+        }
+    })
+
+
+    click_toggle2.addEventListener('click', function(){
+
+        if(contador_toggle2 == 0){
+            icono_footer2.classList.remove('fa-plus')
+            icono_footer2.classList.add('fa-minus')
+             contador_toggle2 = 1
+        }
+        else{
+              icono_footer2.classList.remove('fa-minus')
+              icono_footer2.classList.add('fa-plus')
+              contador_toggle2 = 0
+        }
+    })
+
+click_toggle3.addEventListener('click', function(){
+
+        if(contador_toggle3 == 0){
+            icono_footer3.classList.remove('fa-plus')
+            icono_footer3.classList.add('fa-minus')
+             contador_toggle3 = 1
+        }
+        else{
+              icono_footer3.classList.remove('fa-minus')
+              icono_footer3.classList.add('fa-plus')
+              contador_toggle3 = 0
+        }
+    })
+click_toggle4.addEventListener('click', function(){
+
+        if(contador_toggle4 == 0){
+            icono_footer4.classList.remove('fa-plus')
+            icono_footer4.classList.add('fa-minus')
+             contador_toggle4 = 1
+        }
+        else{
+              icono_footer4.classList.remove('fa-minus')
+              icono_footer4.classList.add('fa-plus')
+              contador_toggle4 = 0
+        }
+    })
+
+}
+
+
+
+
+    /*fin de toggle icon*/
 
 //menu pegajoso
 var stickymenu = document.getElementById("menu-auto")

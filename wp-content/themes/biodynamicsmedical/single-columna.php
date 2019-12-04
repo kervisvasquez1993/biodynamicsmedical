@@ -3,7 +3,7 @@
     <img class="img-responsive" src="<?php echo get_the_post_thumbnail_url();?>" class="img-fluid" alt="Responsive image">
 </div>
 <?php while(have_posts()): the_post() ;?>
-<div class="card">
+<div class="card" id="single">
 
 
 
@@ -55,8 +55,8 @@
                     <div class="panel panel-default">
                         <div class="panel-heading" role="tab" id="headingOne">
                             <h4 class="panel-title">
-                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse0" aria-expanded="true" aria-controls="collapse0" title="Read More">
-                                    <i class="more-less fa fa-plus" aria-hidden="true"></i>
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse0" aria-expanded="true" aria-controls="collapse0" title="Read More" id="click_toggle">
+                                    <i class="more-less fa fa-plus" aria-hidden="true" id="menos"></i>
                                     <p><?php the_field('indicaciones_text');?></p>
                                 </a>
                             </h4>
@@ -70,8 +70,8 @@
                     <div class="panel panel-default">
                         <div class="panel-heading" role="tab" id="headingTwo">
                             <h4 class="panel-title">
-                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="true" aria-controls="collapse0" title="Read More">
-                                    <i class="more-less fa fa-plus" aria-hidden="true"></i>
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="true" aria-controls="collapse0" title="Read More" id="click_toggle2">
+                                    <i class="more-less fa fa-plus" aria-hidden="true" id="menos2"></i>
                                     <p><?php the_field('beneficiosCaracteristica_text');?></p>
                                 </a>
                             </h4>
@@ -85,8 +85,8 @@
                     <div class="panel panel-default">
                         <div class="panel-heading" role="tab" id="headingTree">
                             <h4 class="panel-title">
-                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="true" aria-controls="collapse0" title="Read More">
-                                    <i class="more-less fa fa-plus" aria-hidden="true"></i>
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="true" aria-controls="collapse0" title="Read More" id="click_toggle3">
+                                    <i class="more-less fa fa-plus" aria-hidden="true" id="menos3"></i>
                                     <p><?php the_field('caracteristicasTecnicas_text');?></p>
                                 </a>
                             </h4>
@@ -100,21 +100,15 @@
                     <div class="panel panel-default">
                         <div class="panel-heading" role="tab" id="headingTree">
                             <h4 class="panel-title">
-                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="true" aria-controls="collapse0" title="Read More">
-                                    <i class="more-less fa fa-plus" aria-hidden="true"></i>
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="true" aria-controls="collapse0" title="Read More" id="click_toggle4">
+                                    <i class="more-less fa fa-plus" aria-hidden="true" id="menos4"></i>
                                     <p><?php the_field('archivos_text');?></p>
                                 </a>
                             </h4>
                         </div>
                         <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingO">
                             <div class="panel-body NewsCycle">
-
-                                <form>
-                                    <div class="">
-                                     <button class="form-control-file"><a href="<?php the_field('archivo')?>" class="form-group"> Descargar </a> </button>
-                                    </div>
-                                </form>
-
+                                <a href="<?php the_field('archivo')?>" class="btn btn-secondary btn-lg">downloader pdf <?php the_title(); ?></a>
 
                             </div>
                         </div>

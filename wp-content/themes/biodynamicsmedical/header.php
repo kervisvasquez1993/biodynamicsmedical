@@ -33,12 +33,9 @@
         </div>
             <div class="enlaces color-fondo uno" id="enlaces">
 
-                <!--<a href="<?php the_field('url-home');?>" class="ancla oxygen title-nav">home</a>
-                <a href="<?php the_field('url-divisiones');?>" class="ancla oxygen title-nav">diviciones</a>
-                <a href="<?php the_field('url-contactanos');?>" class="ancla oxygen title-nav">contactanos</a>
-                <div class="ancla">-->
+                
                 <?php
-
+                    
                 $arg= array(
                     'theme_location' => 'header_menu',
                     'container' => 'ul',
@@ -48,10 +45,16 @@
 
                 );
                 wp_nav_menu($arg);
+                
                 ?>
+
+        
 
 
                 <?php get_search_form();?>
+                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
                 </div>
 
             </div>
