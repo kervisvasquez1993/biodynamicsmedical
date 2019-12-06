@@ -13,8 +13,8 @@ get_header();?>
 <div class="container" id="vue-product">
     <span class="ruta-interna abel">
        <a href="<?php the_field('url-home');?>" class="black">Home</a> /
-       <a href="<?php the_field('url-divisiones');?>" class="black">Divisiones</a> /
-       <a href="<?php the_field('url-otros-productos');?>" class="here">Otros Productos</a>
+       <a href="<?php the_field('url-divisiones');?>" class="black">Divisions</a> /
+       <a href="<?php the_field('url-otros-productos');?>" class="here">Other products</a>
     </span>
     <div>
         <span v-on:click="showCategoriaTotal" class="categoria">Todas las categorias</span>

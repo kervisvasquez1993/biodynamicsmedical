@@ -9,7 +9,7 @@
     <!-- Copyright -->
     <div class="footer-copyright text-center  footer-copy py-3">
     <div class="flex">
-                    <h2>certificado</h2>
+                    <h2>certificate</h2>
                     <div class="img-responsive img-footer">
                         <img src="<?php echo get_template_directory_uri()?>/img/Iso9001.png" alt="biodynamics-iso">
                         <img src="<?php echo get_template_directory_uri()?>/img/Iso13485.png" alt="biodynamics-iso">
