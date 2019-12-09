@@ -39,7 +39,7 @@
 
         </div>
         <div class="form-group col-centered col-lg-12">
-            <input type="submit" name="contactanos" class="btn btn-primary" value="Enviar">
+            <input type="submit" name="contactanos" class="btn btn-primary" value="Submit">
             <input type="hidden" name="oculto"  value="1">
         </div>
       </form>

@@ -11,17 +11,17 @@ get_header();?>
 
 <div class="container" id="vue-columna">
      <span class="ruta-interna abel"> <a href="<?php the_field('url-home');?>" class="black">Home</a> /
-       <a href="<?php the_field('url-divisiones');?>" class="black">Divisiones</a> /
-       <a href="<?php the_field('url-columna');?>" class="here">Columna</a></span>
+       <a href="<?php the_field('url-divisiones');?>" class="black">Divisions</a> /
+       <a href="<?php the_field('url-columna');?>" class="here">Spine</a></span>
     <div>
-        <span v-on:click="showCategoriaTotal" class="categoria black">Todas las categorias</span>
-        <span v-on:click="showCategoria1" class="categoria black">columna1</span>
-        <span v-on:click="showCategoria2" class="categoria black">columna2</span>
-        <span v-on:click="showCategoria3" class="categoria black">columna3</span>
-        <span v-on:click="showCategoria4" class="categoria black">columna4</span>
-        <span v-on:click="showCategoria5" class="categoria black">columna5</span>
+        <span v-on:click="showCategoriaTotal" class="categoria oxygen btn btn-outline-secondary">Todas las categorias</span>
+        <span v-on:click="showCategoria1" class="categoria oxygen btn btn-outline-secondary">Spine1</span>
+        <span v-on:click="showCategoria2" class="categoria oxygen btn btn-outline-secondary">Spine2</span>
+        <span v-on:click="showCategoria3" class="categoria oxygen btn btn-outline-secondary">Spine3</span>
+        <span v-on:click="showCategoria4" class="categoria oxygen btn btn-outline-secondary">Spine4</span>
+        <span v-on:click="showCategoria5" class="categoria oxygen btn btn-outline-secondary">Spine5</span>
     </div>
-    <div class="center-titulo here" ><h3>{{title}}</h3></div>
+    <div class="center-titulo quincksand" ><h3>{{title}}</h3></div>
     <div class="row">
         <?php $arg= array(
             'post_type' => 'columna',
@@ -41,7 +41,7 @@ get_header();?>
                                 </p>
                                 <hr>
                                 <a class="link-detail" href="<?php the_permalink();?>">
-                                    Leer Más
+                                Read more
                                 </a>
                             </div>
                         </div>

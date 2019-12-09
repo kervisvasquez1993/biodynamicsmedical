@@ -20,7 +20,7 @@ endwhile;
 ?>
 
     <div class="item active responsive">
-        <img class="img-responsive img-fluid" src="<?php echo get_template_directory_uri();?>/img/test-imagen.jpg" alt="Responsive image">
+        <img class="img-responsive img-fluid" src="<?php echo get_template_directory_uri();?>/img/banner-seccion-contacto.jpg" alt="Responsive image">
 
     </div>
     <section class="container">

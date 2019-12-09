@@ -13,16 +13,16 @@ get_header();?>
 <div class="container" id="vue-max">
        <span class="ruta-interna abel">
            <a href="<?php the_field('url-home');?>" class="black">Home</a> /
-           <a href="<?php the_field('url-divisiones');?>" class="black">Divisiones</a> /
+           <a href="<?php the_field('url-divisiones');?>" class="black">Divisions</a> /
            <a href="<?php the_field('url-maxilofacial');?>" class="here">Maxilofacial</a>
        </span>
     <div>
-        <span v-on:click="showCategoriaTotal" class="categoria">Todas las categorias</span>
-        <span v-on:click="showCategoria1" class="categoria">Maxilofacial1</span>
-        <span v-on:click="showCategoria2" class="categoria">Maxilofacial2</span>
-        <span v-on:click="showCategoria3" class="categoria">Maxilofacial</span>
+        <span v-on:click="showCategoriaTotal" class="categoria oxygen btn btn-outline-secondary">Todas las categorias</span>
+        <span v-on:click="showCategoria1" class="categoria oxygen btn btn-outline-secondary">Maxilofacial1</span>
+        <span v-on:click="showCategoria2" class="categoria oxygen btn btn-outline-secondary">Maxilofacial2</span>
+        <span v-on:click="showCategoria3" class="categoria oxygen btn btn-outline-secondary">Maxilofacial</span>
     </div>
-    <div class="center-titulo here" ><h3>{{title}}</h3></div>
+    <div class="center-titulo quincksand" ><h3>{{title}}</h3></div>
 
     <div class="row">
         <?php $arg= array(

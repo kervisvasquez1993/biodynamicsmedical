@@ -14,7 +14,7 @@
 
     <span class="ruta-interna abel">
         <a href="<?php the_field('url-home');?>" class="black">Home</a> /
-        <a href="<?php the_field('url-divisiones');?>" class="here">Divisiones</a>
+        <a href="<?php the_field('url-divisiones');?>" class="here">Divisions</a>
     </span>
 
 

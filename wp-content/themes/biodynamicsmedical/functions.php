@@ -265,7 +265,7 @@ function otros_productos() {
         'menu_name'          => _x( 'otros_productos', 'admin menu', 'biodinamicsmedical' ),
         'name_admin_bar'     => _x( 'otros_productos', 'add new on admin bar', 'biodinamicsmedical' ),
         'add_new'            => _x( 'Add New', 'book', 'biodinamicsmedical' ),
-        'add_new_item'       => __( 'Add New Pizza', 'biodinamicsmedical' ),
+        'add_new_item'       => __( 'Add New otro producto', 'biodinamicsmedical' ),
         'new_item'           => __( 'New otros_productos', 'biodinamicsmedical' ),
         'edit_item'          => __( 'Edit otros_productos', 'biodinamicsmedical' ),
         'view_item'          => __( 'View otros_productos', 'biodinamicsmedical' ),
@@ -296,4 +296,42 @@ function otros_productos() {
     register_post_type( 'otros_productos', $args );
 }
 
+add_action( 'init', 'divisiones' );
+function divisiones() {
+    $labels = array(
+        'name'               => _x( 'divisiones', 'biodinamicsmedical' ),
+        'singular_name'      => _x( 'divisiones', 'post type singular name', 'biodinamicsmedical' ),
+        'menu_name'          => _x( 'divisiones', 'admin menu', 'biodinamicsmedical' ),
+        'name_admin_bar'     => _x( 'divisiones', 'add new on admin bar', 'biodinamicsmedical' ),
+        'add_new'            => _x( 'Add New', 'book', 'biodinamicsmedical' ),
+        'add_new_item'       => __( 'Add New división', 'biodinamicsmedical' ),
+        'new_item'           => __( 'New divisiones', 'biodinamicsmedical' ),
+        'edit_item'          => __( 'Edit divisiones', 'biodinamicsmedical' ),
+        'view_item'          => __( 'View divisiones', 'biodinamicsmedical' ),
+        'all_items'          => __( 'All divisiones', 'biodinamicsmedical' ),
+        'search_items'       => __( 'Search divisiones', 'biodinamicsmedical' ),
+        'parent_item_colon'  => __( 'Parent divisiones:', 'biodinamicsmedical' ),
+        'not_found'          => __( 'No divisiones found.', 'biodinamicsmedical' ),
+        'not_found_in_trash' => __( 'No divisiones found in Trash.', 'biodinamicsmedical' )
+    );
+
+    $args = array(
+        'labels'             => $labels,
+        'description'        => __( 'Description.', 'biodinamicsmedical' ),
+        'public'             => true,
+        'publicly_queryable' => true,
+        'show_ui'            => true,
+        'show_in_menu'       => true,
+        'query_var'          => true,
+        'rewrite'            => array( 'slug' => 'divisiones' ),
+        'capability_type'    => 'post',
+        'has_archive'        => true,
+        'hierarchical'       => false,
+        'menu_position'      => 6,
+        'supports'           => array( 'title', 'editor', 'thumbnail' ),
+        'taxonomies'          => array( 'category' ),
+    );
+
+    register_post_type( 'divisiones', $args );
+}
 

@@ -16,7 +16,7 @@ get_header();?>
 
 <span class="ruta-interna abel">
        <a href="<?php the_field('url-home');?>" class="black">Home</a> /
-       <a href="<?php the_field('url-divisiones');?>" class="black">Divisiones</a> /
+       <a href="<?php the_field('url-divisiones');?>" class="black">Divisions</a> /
        <a href="<?php the_field('url-trauma');?>" class="here">Trauma</a> /
 </span>
 

@@ -10,7 +10,7 @@
     <div class="container">
          <span class="ruta-interna abel">
        <a class="black" href="<?php the_field('url-home');?>">Home</a> /
-       <a class="black" href="<?php the_field('url-divisiones');?>">Divisiones</a> /
+       <a class="black" href="<?php the_field('url-divisiones');?>">Divisions</a> /
        <a class="black" href="<?php the_field('url-otros-productos');?>">Otros Productos</a> /
         <a class="black here2" href="#"><?php the_title();?></a>
    </span>

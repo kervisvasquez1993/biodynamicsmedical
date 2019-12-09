@@ -33,11 +33,11 @@
                             <div class="overlay text-center">
                                 <h2>
                                     <a href="<?php the_field('url-trauma');?>" class="oxygen">
-                                        Trauma
+                                        <?php the_field('trauma_palabra');?>
                                     </a>
                                 </h2>
                                 <a class="info oxygen" href="<?php the_field('url-trauma');?>" >
-                                    click here
+                                    <?php the_field('click');?>
                                 </a>
                             </div>
                         </div>
@@ -51,11 +51,11 @@
                                 <div class="overlay text-center">
                                     <h2>
                                         <a href="<?php the_field('url-columna')?>" class="oxygen">
-                                            COLUMNA
+                                            <?php the_field('columna_palabra');?>
                                         </a>
                                     </h2>
                                     <a class="info oxygen" href="<?php the_field('url-columna')?>">
-                                        click here
+                                        <?php the_field('click');?>
                                     </a>
                                 </div>
                             </div>
@@ -68,11 +68,11 @@
                             <div class="overlay text-center">
                                 <h2>
                                     <a href="<?php the_field('url-maxilofacial ')?>" class="oxygen">
-                                        MAXILOFACIAL
+                                        <?php the_field('maxilofacial_palabra');?>
                                     </a>
                                 </h2>
                                 <a class="info oxygen" href="<?php the_field('url-maxilofacial')?>" >
-                                    click here
+                                    <?php the_field('click');?>
                                 </a>
                             </div>
                         </div>
@@ -85,11 +85,11 @@
                                 <div class="overlay text-center">
                                     <h2>
                                         <a href="<?php the_field('url-otros-productos')?>" class="oxygen">
-                                            OTROS PRODUCTOS
+                                            <?php the_field('otros_productos');?>
                                         </a>
                                     </h2>
                                     <a class="info oxygen" href="<?php the_field('url-otros-productos')?>" class="oxygen">
-                                        click here
+                                        <?php the_field('click');?>
                                     </a>
                                 </div>
                             </div>

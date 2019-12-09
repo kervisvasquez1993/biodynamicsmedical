@@ -17,12 +17,12 @@ get_header();?>
        <a href="<?php the_field('url-otros-productos');?>" class="here">Other products</a>
     </span>
     <div>
-        <span v-on:click="showCategoriaTotal" class="categoria">Todas las categorias</span>
-        <span v-on:click="showCategoria1" class="categoria">categoria1</span>
-        <span v-on:click="showCategoria2" class="categoria">categoria2</span>
-        <span v-on:click="showCategoria3" class="categoria">categoria3</span>
+        <span v-on:click="showCategoriaTotal" class="categoria oxygen  btn btn-outline-secondary ">Todas las categorias</span>
+        <span v-on:click="showCategoria1" class="categoria oxygen  btn btn-outline-secondary ">categoria1</span>
+        <span v-on:click="showCategoria2" class="categoria oxygen  btn btn-outline-secondary ">categoria2</span>
+        <span v-on:click="showCategoria3" class="categoria oxygen  btn btn-outline-secondary ">categoria3</span>
     </div>
-    <div class="center-titulo here" ><h3>{{title}}</h3></div>
+    <div class="center-titulo quincksand" ><h3>{{title}}</h3></div>
     <div class="row">
         <?php $arg= array(
             'post_type' => 'otros_productos',
@@ -31,7 +31,7 @@ get_header();?>
             'order'=> 'ASC' );
         $otros_productos= new WP_Query($arg);
         while($otros_productos->have_posts()): $otros_productos->the_post();?>
-            <div class="col-xs-6 col-sm-4 col-lg-4">
+            <div class="col-xs-6 col-sm-4 col-lg-4" v-show="<?php the_field('render-productos');?>">
                 <div class="thumbnail ">
                     <img src="<?php the_field('imagen_principal_producto');?>" alt="...">
                     <div class="caption product-description">
