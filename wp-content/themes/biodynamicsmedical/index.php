@@ -13,9 +13,10 @@
 <div class="container">
 
     <span class="ruta-interna abel">
-        <a href="<?php the_field('url-home');?>" class="black">Home</a> /
-        <a href="<?php the_field('url-divisiones');?>" class="here">Divisions</a>
-    </span>
+       <a href="<?php the_field('url-home');?>" class="black"><?php the_field('inicio_palabra')?></a> /
+       <a href="<?php the_field('url-divisiones');?>" class="here"><?php the_field('divisiones_palabra');?></a>
+
+</span>
 
 
     <div class="row">
@@ -47,7 +48,7 @@
                                     </a>
                                 </h2>
                                 <a class="info oxygen" href="<?php the_field('enlaces_division')?>">
-                                    click here
+                                    <?php the_field('click')?>
                                 </a>
                             </div>
                         </div>

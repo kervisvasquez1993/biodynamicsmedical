@@ -39,9 +39,10 @@
 
         </div>
         <div class="form-group col-centered col-lg-12">
-            <input type="submit" name="contactanos" class="btn btn-primary" value="Submit">
+            <input type="submit" name="contactanos" class="btn btn-primary" value="<?php the_field('enviar_contactanos');?>">
             <input type="hidden" name="oculto"  value="1">
         </div>
+
       </form>
         </div>
 

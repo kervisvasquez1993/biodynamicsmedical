@@ -25,10 +25,20 @@ require get_template_directory().'/inc/option.php';
 
     }
 
-
-
-
 // fin de soporte de imagenes
+/*filtrar los resultados de busquedas*/
+function add_custom_pt( $query ) {
+    if ( !is_admin() && $query->is_main_query() ) {
+        if ( $query->is_search ) {
+            $query->set( 'post_type', array('trauma', 'otros_productos', 'columna', 'maxilofacial' ) );
+        }
+    }
+}
+
+add_action( 'pre_get_posts', 'add_custom_pt' );
+
+/*fin de filtro de resultados de busquedas*/
+
 // Cargar los estilos y los script de la pagina
 if(!function_exists( style )) {
 

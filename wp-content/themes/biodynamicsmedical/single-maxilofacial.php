@@ -9,9 +9,9 @@
 
     <div class="container">
          <span class="ruta-interna abel">
-       <a class="black" href="<?php the_field('url-home');?>">Home</a> /
-       <a class="black" href="<?php the_field('url-divisiones');?>">Divisions</a> /
-       <a class="black" href="<?php the_field('url-maxilofacial');?>">Maxilofacial</a> /
+    <a href="<?php the_field('url-home');?>" class="black"><?php the_field('inicio_palabra')?></a> /
+       <a href="<?php the_field('url-divisiones');?>" class="black"><?php the_field('divisiones_palabra');?></a> /
+       <a href="<?php the_field('url-maxilofacial');?>" class="black"><?php the_field('maxilofacial_palabra')?></a> /
         <a class="black here2" href="#"><?php the_title();?></a>
    </span>
         <h1 class=""><?php the_title();?></h1>

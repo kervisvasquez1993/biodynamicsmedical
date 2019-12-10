@@ -15,18 +15,18 @@ get_header();?>
 <div class="container" id="vue">
 
 <span class="ruta-interna abel">
-       <a href="<?php the_field('url-home');?>" class="black">Home</a> /
-       <a href="<?php the_field('url-divisiones');?>" class="black">Divisions</a> /
-       <a href="<?php the_field('url-trauma');?>" class="here">Trauma</a> /
+       <a href="<?php the_field('url-home');?>" class="black"><?php the_field('inicio_palabra')?></a> /
+       <a href="<?php the_field('url-divisiones');?>" class="black"><?php the_field('divisiones_palabra');?></a> /
+       <a href="<?php the_field('url-columna');?>" class="here"><?php the_field('trauma_palabra')?></a>
 </span>
 
     <div class="categoria-padre">
-    <span v-on:click="showCategoriaTotal" class="categoria oxygen  btn btn-outline-secondary ">Todas las categorias</span>
-    <span v-on:click="showCategoria1" class="categoria  oxygen btn btn-outline-secondary ">Sistema DHS/DCS-II</span>
-    <span v-on:click="showCategoria2" class="categoria  oxygen btn btn-outline-secondary ">Sistema de Tornillo</span>
-    <span v-on:click="showCategoria3" class="categoria oxygen  btn btn-outline-secondary ">Sistema BioNail AR</span>
-    <span v-on:click="showCategoria4" class="categoria  oxygen btn btn-outline-secondary ">Sistema Biolock</span>
-    <span v-on:click="showCategoria5" class="categoria  oxygen btn btn-outline-secondary ">Sistema MIS</span>
+    <span v-on:click="showCategoriaTotal" class="categoria oxygen  btn btn-outline-secondary "><?php the_field('categoria1');?></span>
+    <span v-on:click="showCategoria1" class="categoria  oxygen btn btn-outline-secondary "><?php the_field('categoria2');?></span>
+    <span v-on:click="showCategoria2" class="categoria  oxygen btn btn-outline-secondary "><?php the_field('categoria3');?></span>
+    <span v-on:click="showCategoria3" class="categoria oxygen  btn btn-outline-secondary "><?php the_field('categoria4');?></span>
+    <span v-on:click="showCategoria4" class="categoria  oxygen btn btn-outline-secondary "><?php the_field('categoria5');?></span>
+    <span v-on:click="showCategoria5" class="categoria  oxygen btn btn-outline-secondary "><?php the_field('categoria6');?></span>
     </div>
     <div class="center-titulo quincksand " ><h3>{{title}}</h3></div>
     <div class="flex-row row">
@@ -50,7 +50,7 @@ get_header();?>
                         </p>
                         <hr>
                         <a class="link-detail" href="<?php the_permalink();?>">
-                            Read More
+                           <?php the_field('leer_mas');?>
                         </a>
                     </div>
                 </div>

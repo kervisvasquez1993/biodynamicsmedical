@@ -306,6 +306,7 @@ if(maxilo){
             },
             showCategoria2() {
                 this.title = 'Columna2'
+                this.categoria1 = false
                 this.categoria2 = true
                 this.categoria3 = false
                 this.categoria4 = false

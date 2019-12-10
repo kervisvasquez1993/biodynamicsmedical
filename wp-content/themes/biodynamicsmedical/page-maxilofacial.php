@@ -11,16 +11,17 @@ get_header();?>
 
 
 <div class="container" id="vue-max">
-       <span class="ruta-interna abel">
-           <a href="<?php the_field('url-home');?>" class="black">Home</a> /
-           <a href="<?php the_field('url-divisiones');?>" class="black">Divisions</a> /
-           <a href="<?php the_field('url-maxilofacial');?>" class="here">Maxilofacial</a>
-       </span>
-    <div>
-        <span v-on:click="showCategoriaTotal" class="categoria oxygen btn btn-outline-secondary">Todas las categorias</span>
-        <span v-on:click="showCategoria1" class="categoria oxygen btn btn-outline-secondary">Maxilofacial1</span>
-        <span v-on:click="showCategoria2" class="categoria oxygen btn btn-outline-secondary">Maxilofacial2</span>
-        <span v-on:click="showCategoria3" class="categoria oxygen btn btn-outline-secondary">Maxilofacial</span>
+      <span class="ruta-interna abel">
+       <a href="<?php the_field('url-home');?>" class="black"><?php the_field('inicio_palabra')?></a> /
+       <a href="<?php the_field('url-divisiones');?>" class="black"><?php the_field('divisiones_palabra');?></a> /
+       <a href="<?php the_field('url-columna');?>" class="here"><?php the_field('maxilofacial_palabra')?></a>
+     </span>
+    <div class="categoria-padre">
+        <span v-on:click="showCategoriaTotal" class="categoria oxygen  btn btn-outline-secondary "><?php the_field('categoria1');?></span>
+        <span v-on:click="showCategoria1" class="categoria  oxygen btn btn-outline-secondary "><?php the_field('categoria2');?></span>
+        <span v-on:click="showCategoria2" class="categoria  oxygen btn btn-outline-secondary "><?php the_field('categoria3');?></span>
+        <span v-on:click="showCategoria3" class="categoria oxygen  btn btn-outline-secondary "><?php the_field('categoria4');?></span>
+
     </div>
     <div class="center-titulo quincksand" ><h3>{{title}}</h3></div>
 

@@ -15,13 +15,7 @@
                             <img src="<?php echo get_template_directory_uri();?>/img/sobrecito.png" alt="">
                         </div>
 
-                        <div class="text-gracias">
-                            <h2 class="gracias-body-h2">
-                                GRACIAS
-                            </h2>
-                         <p class="gracias-body-p">por contactarnos</p>
-                            <p class="gracias-body-p gracias-body-p-2"> Su mensaje fue enviado correctamente</p>
-                        </div>
+                       <?php the_content();?>
                    </div>
                     <p class="parrafo-gracias"><?php the_field('text-gracias')?></p>
             </div>
