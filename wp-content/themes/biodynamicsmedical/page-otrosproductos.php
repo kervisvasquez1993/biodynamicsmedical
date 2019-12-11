@@ -13,7 +13,7 @@ get_header();?>
 <div class="container" id="vue-product">
    <span class="ruta-interna abel"> <a href="<?php the_field('url-home');?>" class="black"><?php the_field('inicio_palabra')?></a> /
        <a href="<?php the_field('url-divisiones');?>" class="black"><?php the_field('divisiones_palabra');?></a> /
-       <a href="<?php the_field('url-columna');?>" class="here"><?php the_field('otros_productos_palabra')?></a>
+       <a href="<?php the_field('url-columna');?>" class="here"><?php the_field('otros_productos')?></a>
      </span>
     <div class="categoria-padre">
         <span v-on:click="showCategoriaTotal" class="categoria oxygen  btn btn-outline-secondary "><?php the_field('categoria1');?></span>

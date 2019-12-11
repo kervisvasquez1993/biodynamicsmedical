@@ -11,7 +11,7 @@
          <span class="ruta-interna abel">
      <a href="<?php the_field('url-home');?>" class="black"><?php the_field('inicio_palabra')?></a> /
        <a href="<?php the_field('url-divisiones');?>" class="black"><?php the_field('divisiones_palabra');?></a> /
-       <a href="<?php the_field('url-otros-productos');?>" class="black"><?php the_field('otros_productos_palabra')?></a> /
+       <a href="<?php the_field('url-otros-productos');?>" class="black"><?php the_field('otros_productos')?></a> /
         <a class="black here2" href="#"><?php the_title();?></a>
    </span>
         <h1 class=""><?php the_title();?></h1>
