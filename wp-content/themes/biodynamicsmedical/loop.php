@@ -26,19 +26,15 @@ endwhile;
     <section class="container">
         <div class="row">
             <?php while(have_posts()): the_post();?>
-    <div class="col-xs-6 col-sm-4 col-lg-4">
+            <div class="col-xs-6 col-sm-4 col-lg-4">
                  <div class="thumbnail ">
                     <img src="<?php the_field('imagen_busqueda');?>" alt="">
 
                 </div>
             <div class="caption product-description">
-                    <?php
-                    get_template_part( 'content', get_post_format() );
-
-                    ?>
-
+                    <?php get_template_part( 'content', get_post_format() );?>
             </div>
-                <?php endwhile;?>
+            <?php endwhile;?>
 
             </div>
         </div>
@@ -46,10 +42,3 @@ endwhile;
 
 
 
-<?php
-/**
- * Functions hooked in to storefront_paging_nav action
- *
- * @hooked storefront_paging_nav - 10
- */
-do_action( 'storefront_loop_after' );

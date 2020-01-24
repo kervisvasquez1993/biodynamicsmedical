@@ -3,15 +3,16 @@
     <img class="img-responsive" src="<?php echo get_the_post_thumbnail_url();?>" class="img-fluid" alt="Responsive image">
 </div>
 <?php while(have_posts()): the_post() ;?>
-    <div class="card">
-        <div class="card">
-   <span> <a href="<?php the_field('url-home');?>">Home</a> /
-       <a href="<?php the_field('url-divisiones');?>">Divisiones</a> /
-       <a href="<?php the_field('url-trauma');?>">Trauma</a> /
-        <?php the_title(); ?>
+    <div class="container" id="single">
+
+   <span class="ruta-interna abel">
+       <a href="<?php the_field('url-home');?>" class="black">Home</a> /
+       <a href="<?php the_field('url-divisiones');?>" class="black">Divisiones</a> /
+       <a href="<?php the_field('url-trauma');?>" class="black"><?php the_field('nombre_categoria');?></a> /
+        <a class="here black" href=""><?php the_title(); ?></a>
    </span>
-        </div>
-<div class="container">
+
+
     <div class="row">
     <div class="carousel-row no-gutter">
         <div class=" row slide-row">
@@ -46,75 +47,76 @@
         </div>
     </div>
     </div>
-    <div class="row">
-        <div class="col-lg-12">
-        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-            <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingOne">
-                    <h4 class="panel-title">
-                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse0" aria-expanded="true" aria-controls="collapse0" title="Read More">
-                            <i class="more-less fa fa-plus" aria-hidden="true"></i>
-                            <p><?php the_field('indicaciones_text');?></p>
-                        </a>
-                    </h4>
-                </div>
-                <div id="collapse0" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingO">
-                    <div class="panel-body">
-                        <?php the_field('indicaciones')?>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse0" aria-expanded="true" aria-controls="collapse0"
+                                   title="Read More" id="click_toggle">
+                                    <i class="more-less fa fa-plus" aria-hidden="true" id="menos"></i>
+                                    <p><?php the_field('indicaciones_text');?></p>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapse0" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingO">
+                            <div class="panel-body NewsCycle">
+                                <?php the_field('indicaciones')?>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingTwo">
-                    <h4 class="panel-title">
-                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="true" aria-controls="collapse0" title="Read More">
-                            <i class="more-less fa fa-plus" aria-hidden="true"></i>
-                            <p><?php the_field('beneficiosCaracteristica_text');?></p>
-                        </a>
-                    </h4>
-                </div>
-                <div id="collapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingO">
-                    <div class="panel-body">
-                        <?php the_field('beneficios_y_caracteristicas')?>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingTwo">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="true" aria-controls="collapse0" title="Read More" id="click_toggle2">
+                                    <i class="more-less fa fa-plus" aria-hidden="true" id="menos2"></i>
+                                    <p><?php the_field('beneficiosCaracteristica_text');?></p>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingO">
+                            <div class="panel-body NewsCycle">
+                                <?php the_field('beneficios_y_caracteristicas')?>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingTree">
-                    <h4 class="panel-title">
-                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="true" aria-controls="collapse0" title="Read More">
-                            <i class="more-less fa fa-plus" aria-hidden="true"></i>
-                                <p><?php the_field('caracteristicasTecnicas_text');?></p>
-                        </a>
-                    </h4>
-                </div>
-                <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingO">
-                    <div class="panel-body">
-                        <?php the_field('caracteristicas_tecnicas')?>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingTree">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="true" aria-controls="collapse0" title="Read More" id="click_toggle3">
+                                    <i class="more-less fa fa-plus" aria-hidden="true" id="menos3"></i>
+                                    <p><?php the_field('caracteristicasTecnicas_text');?></p>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingO">
+                            <div class="panel-body NewsCycle">
+                                <?php the_field('caracteristicas_tecnicas')?>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingTree">
-                    <h4 class="panel-title">
-                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="true" aria-controls="collapse0" title="Read More">
-                            <i class="more-less fa fa-plus" aria-hidden="true"></i>
-                            <p><?php the_field('archivos_text');?></p>
-                        </a>
-                    </h4>
-                </div>
-                <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingO">
-                    <div class="panel-body">
-                        <a href="<?php the_field('archivo')?>"></a>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingTree">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="true" aria-controls="collapse0" title="Read More" id="click_toggle4">
+                                    <i class="more-less fa fa-plus" aria-hidden="true" id="menos4"></i>
+                                    <p><?php the_field('archivos_text');?></p>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingO">
+                            <div class="panel-body NewsCycle">
+                                <a href="<?php the_field('archivo')?>" class="btn btn-secondary btn-lg">downloader pdf <?php the_title(); ?></a>
 
+                            </div>
+                        </div>
                     </div>
+
                 </div>
+
             </div>
-
-</div>
-
-    </div>
-    </div>
+        </div>
 </div>
 <?php endwhile;?>
 
